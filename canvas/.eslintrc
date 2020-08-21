@@ -1,0 +1,39 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es6": true
+  },
+  "plugins": ["promise"],
+  "extends": [
+    "eslint:recommended",
+    "google",
+    "react-app",
+    "plugin:import/warnings",
+    "plugin:promise/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "max-len": ["warn", {"code": 100, "ignoreUrls": true}],
+    "valid-jsdoc": "off",
+    "require-jsdoc": "off",
+    "no-console": "off",
+    "import/no-named-as-default": "off"
+  },
+  "overrides": [
+    {
+      "files": ["*.test.js", "*.spec.js", "scripts/**"],
+      "rules": {
+        "promise/always-return": "off",
+        "promise/catch-or-return": "off"
+      }
+    }
+  ]
+}

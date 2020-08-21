@@ -1,0 +1,204 @@
+/**
+ * Copyright 2020 Google LLC
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+:local(.root) {
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+}
+
+:local(.frozen) {
+    pointer-events: none;
+}
+
+:local(.container) {
+    position: relative;
+    text-align: center;
+    padding: 0 8vw;
+    margin: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+:local(.imageContainer) {
+    border-radius: 0.5em;
+}
+
+:local(.imageContainer img) {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+:local(.textContainer) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+:local(.header) {
+    font-weight: 700;
+    max-height: 100%;
+    line-height: 1;
+    margin: 0;
+}
+
+:local(.body) {
+    font-weight: 700;
+    max-height: 100%;
+    line-height: 1.25;
+    margin: 0;
+    padding: 0.5em 0;
+    letter-spacing: 0.012em;
+}
+
+:local(.smallContainer) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+    margin: 0.5em 0;
+    overflow-y: auto;
+}
+
+:local(.smallContainer::-webkit-scrollbar) {
+    display: none;
+}
+
+:local(.small) {
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0.5em 0;
+    flex: 1 1 auto;
+}
+
+:local(.childrenContainer) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+@media (orientation: portrait) {
+    :local(.container) {
+        justify-content: flex-start;
+        height: 70%;
+    }
+
+    :local(.outcomeContainer) {
+        height: 92%;
+        padding-top: 6vh;
+    }
+
+    :local(.imageContainer) {
+        flex: 0 0 auto;
+        max-height: 32%;
+        padding-bottom: 5%;
+    }
+
+    :local(.textContainer) {
+        flex-grow: 1;
+    }
+
+    :local(.introTextContainer) {
+        justify-content: space-around;
+    }
+
+    :local(.header) {
+        font-size: 13.5vw;
+    }
+
+    :local(.body) {
+        font-size: 7vw;
+    }
+
+    :local(.small) {
+        font-size: 4.5vw;
+    }
+
+    :local(.childrenContainer) {
+        flex-direction: column;
+    }
+}
+
+@media (orientation: landscape) {
+    :local(.container) {
+        justify-content: center;
+        height: 66%;
+    }
+
+    :local(.questionContainer) {
+        padding: 0 14vw;
+    }
+
+    :local(.outcomeContainer) {
+        flex-direction: row;
+        height: 92%;
+        padding-top: 12.5vh;
+    }
+
+    :local(.imageContainer) {
+        margin: 0 4vw 0 0;
+        flex: 1 0 38%;
+        max-height: 100%;
+    }
+
+    :local(.introTextContainer) {
+        flex-grow: 1;
+        justify-content: space-around;
+    }
+
+    :local(.outcomeTextContainer) {
+        flex: auto;
+        justify-content: flex-start;
+        height: 100%;
+        text-align: left;
+    }
+
+    :local(.header) {
+        font-size: 15vh;
+    }
+
+    :local(.body) {
+        font-size: 7.5vh;
+    }
+
+    :local(.outcomeBody) {
+        padding-top: 0;
+    }
+
+    :local(.small) {
+        font-size: 4.0vh;
+    }
+
+    :local(.questionChildrenContainer) {
+        justify-content: space-between;
+    }
+
+    :local(.outcomeChildrenContainer) {
+        justify-content: left;
+    }
+}

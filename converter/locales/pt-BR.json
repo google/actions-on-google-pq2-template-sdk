@@ -1,0 +1,220 @@
+{
+  "actions": {
+    "custom": {
+      "actions.intent.MAIN": {},
+      "actions.intent.PLAY_GAME": {}
+    }
+  },
+  "intents": {
+    "BothOrNone": {
+      "trainingPhrases": [
+        "Que difícil",
+        "Difícil",
+        "Nenhuma das duas",
+        "Não tenho ideia",
+        "Não sei dizer",
+        "Parece que as duas respostas estão corretas",
+        "Nehuma delas",
+        "Não faço ideia",
+        "Ambas",
+        "Nenhuma das alternativas",
+        "Isso é difícil",
+        "Eu não saberia dizer",
+        "Eu não tenho ideia",
+        "Acho que as duas respostas estão corretas",
+        "Eu não faço ideia",
+        "Nenhuma",
+        "Os dois",
+        "Acho que as duas respostas estão certas",
+        "Eu não sei",
+        "Nenhuma das opções",
+        "Eu não sei dizer",
+        "As duas",
+        "Eu não tenho ideia",
+        "Acho que as duas respostas estão corretas",
+        "Eu não faço ideia"
+      ]
+    },
+    "Help": {
+      "trainingPhrases": [
+        "O que preciso fazer?",
+        "Como o jogo funciona?",
+        "Como este jogo funciona?",
+        "O que tenho que fazer?",
+        "Como funciona o jogo?",
+        "Ajuda",
+        "O que é preciso fazer?",
+        "Como se joga?",
+        "O que devo fazer?"
+      ]
+    },
+    "No": {
+      "trainingPhrases": [
+        "Não, obrigado",
+        "Não, obrigada",
+        "Certamente não",
+        "Sem dúvidas, não",
+        "Não mesmo",
+        "Não, agradeço",
+        "Com certeza não",
+        "Não quero, tranquilo",
+        "Não, valeu",
+        "Não",
+        "Negativo"
+      ]
+    },
+    "OrdinalChoice": {
+      "trainingPhrases": [
+        "($count 'A anterior' auto=false)",
+        "($count 'Dois' auto=false)",
+        "($count 'Em segundo' auto=false)",
+        "($count 'O anterior' auto=false)",
+        "É a ($count 'primeira' auto=false)?",
+        "A ($count 'primeira' auto=false)?",
+        "Deve ser a ($count 'segunda' auto=false)",
+        "Que tal ($count 'a segunda' auto=false)?",
+        "($count 'A segunda' auto=false)?",
+        "Que tal a ($count 'primeira' auto=false)?",
+        "Acredito que seja a ($count 'segunda' auto=false)",
+        "Talvez a ($count 'primeira' auto=false)",
+        "Talvez a ($count 'segunda' auto=false)",
+        "Deve ser a ($count 'primeira' auto=false)",
+        "E a ($count 'primeira' auto=false)?",
+        "É a ($count 'segunda' auto=false)",
+        "Acho que é a ($count 'segunda' auto=false)",
+        "Acho que a ($count 'segunda' auto=false)",
+        "E a ($count 'segunda' auto=false)?",
+        "Acho que a ($count 'primeira' auto=false)",
+        "É a ($count 'primeira' auto=false)",
+        "Acredito que seja a ($count 'primeira' auto=false)",
+        "Pode ser a ($count 'primeira' auto=false)",
+        "Pode ser a ($count 'segunda' auto=false)",
+        "É a ($count 'segunda' auto=false)?",
+        "Acho que é a ($count 'primeira' auto=false)"
+      ]
+    },
+    "Quit": {
+      "trainingPhrases": [
+        "Sair",
+        "Quero parar de jogar",
+        "Quero sair do jogo",
+        "Terminar",
+        "Interromper o jogo",
+        "Sair do jogo",
+        "Não quero mais jogar",
+        "Não quero jogar mais",
+        "Cancelar",
+        "Pare o jogo",
+        "Parar de jogar",
+        "Quero parar de jogar"
+      ]
+    },
+    "Repeat": {
+      "trainingPhrases": [
+        "Não compreendi",
+        "Fale de novo",
+        "Fale mais uma vez",
+        "Você pode repetir?",
+        "Fale novamente",
+        "Você pode falar novamente?",
+        "Não ouvi",
+        "Não entendi",
+        "Pode repetir?"
+      ]
+    },
+    "Restart": {
+      "trainingPhrases": [
+        "Jogar de novo",
+        "Reiniciar o jogo",
+        "Reiniciar",
+        "Jogar novamente",
+        "Recomeçar o jogo",
+        "Recomeçar"
+      ]
+    },
+    "Skip": {
+      "trainingPhrases": [
+        "Passar essa",
+        "Passar a pergunta",
+        "Pular essa",
+        "Próxima pergunta",
+        "Ir para a próxima pergunta",
+        "Pergunta seguinte",
+        "Pular a pergunta",
+        "Passar pergunta"
+      ]
+    },
+    "Start": {
+      "trainingPhrases": [
+        "Vamos jogar",
+        "Começar",
+        "Iniciar",
+        "Mal posso esperar",
+        "Ok, vamos jogar",
+        "Claro",
+        "Certo, vamos jogar"
+      ]
+    },
+    "Yes": {
+      "trainingPhrases": [
+        "OK",
+        "Tudo bem",
+        "Certo",
+        "Sim",
+        "Totalmente",
+        "Certamente",
+        "É provável",
+        "Com certeza",
+        "Provavelmente",
+        "Definitivamente"
+      ]
+    }
+  },
+  "types": {
+    "answer": {
+      "synonym": {}
+    },
+    "count": {
+      "synonym": {
+        "entities": {
+          "first": {
+            "synonyms": [
+              "1ª",
+              "1º",
+              "Primeira",
+              "A anterior",
+              "Primeiro",
+              "O anterior"
+            ]
+          },
+          "second": {
+            "synonyms": [
+              "A segunda",
+              "O segundo",
+              "Dois",
+              "2ª",
+              "2º",
+              "Segundo",
+              "Segunda",
+              "Em segundo"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "localizedSettings": {
+      "developerEmail": "developer@gmail.com",
+      "developerName": "Developer Name",
+      "displayName": "amostra de questionário de personalidade",
+      "fullDescription": "amostra de questionário de personalidade",
+      "pronunciation": "amostra de questionário de personalidade",
+      "sampleInvocations": [
+        "Falar com o app amostra de questionário de personalidade"
+      ],
+      "shortDescription": "amostra de questionário de personalidade",
+      "voice": "female_1"
+    }
+  }
+}

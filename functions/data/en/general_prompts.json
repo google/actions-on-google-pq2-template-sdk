@@ -1,0 +1,308 @@
+{
+  "intro_confirmation_question_variant_1": {
+    "displayed_flow": "Want to answer a few questions?"
+  },
+  "intro_confirmation_question_variant_2": {
+    "displayed_flow": "Do you wish to answer some questions?"
+  },
+  "intro_confirmation_question_variant_3": {
+    "displayed_flow": "Do you wish to answer a few questions?"
+  },
+  "intro_confirmation_positive": {
+    "displayed_flow": "Yes"
+  },
+  "intro_confirmation_negative": {
+    "displayed_flow": "No"
+  },
+  "intro_positive_response_variant_1": {
+    "displayed_flow": "So, I have a short quiz for you..."
+  },
+  "intro_positive_response_variant_2": {
+    "displayed_flow": "Great! Let's start the quiz..."
+  },
+  "intro_positive_response_variant_3": {
+    "displayed_flow": "Sure, then let's start the quiz ..."
+  },
+  "intro_negative_response_variant_1": {
+    "displayed_flow": "Ok, just let me know if you ever want to talk."
+  },
+  "intro_negative_response_variant_2": {
+    "displayed_flow": "Ok, just ask if you want to try again later."
+  },
+  "intro_negative_response_variant_3": {
+    "displayed_flow": "Ok, try again later, if you want."
+  },
+  "intro_no_match_first_variant_1": {
+    "displayed_flow": "Not sure what you mean. Can I ask you some questions?"
+  },
+  "intro_no_match_first_variant_2": {
+    "displayed_flow": "Just wanted to confirm. Can I ask you some questions?"
+  },
+  "intro_no_match_first_variant_3": {
+    "displayed_flow": "Do you want to start the quiz?"
+  },
+  "intro_no_match_second_variant_1": {
+    "displayed_flow": "Just say \"yes\", if you want to get started, or \"no\", if you want to stop."
+  },
+  "intro_no_match_second_variant_2": {
+    "displayed_flow": "Can you please confirm by saying \"Yes\" or \"No\"?"
+  },
+  "intro_no_match_second_variant_3": {
+    "displayed_flow": "Just wanted to see if you wanted to continue, you can say \"Yes\" or \"No\"."
+  },
+  "transitions_regular_variant_1": {
+    "displayed_flow": "Here's the next one..."
+  },
+  "transitions_regular_variant_2": {
+    "displayed_flow": "Here's another one..."
+  },
+  "transitions_regular_variant_3": {
+    "displayed_flow": "Next question..."
+  },
+  "transitions_final_variant_1": {
+    "displayed_flow": "Ok, last question..."
+  },
+  "transitions_final_variant_2": {
+    "displayed_flow": "Ok, one more thing..."
+  },
+  "transitions_final_variant_3": {
+    "displayed_flow": "Ok, I just have one more question..."
+  },
+  "intro_no_input_first_variant_1": {
+    "displayed_flow": "Hello? Do you want to keep talking?"
+  },
+  "intro_no_input_first_variant_2": {
+    "displayed_flow": "Should we keep going?"
+  },
+  "intro_no_input_first_variant_3": {
+    "displayed_flow": "What do you say, do you want to keep going?"
+  },
+  "intro_no_input_second_variant_1": {
+    "displayed_flow": "Still want to talk?"
+  },
+  "intro_no_input_second_variant_2": {
+    "displayed_flow": "Do you wish to continue?"
+  },
+  "intro_no_input_second_variant_3": {
+    "displayed_flow": "Do you want to proceed?"
+  },
+  "answer_no_match_first_variant_1": {
+    "displayed_flow": "Well, that was unexpected. Can you try again?"
+  },
+  "answer_no_match_first_variant_2": {
+    "displayed_flow": "I had a little trouble understanding you. Could you try again?"
+  },
+  "answer_no_match_first_variant_3": {
+    "displayed_flow": "How about you give that answer one more shot?"
+  },
+  "answer_no_match_second_variant_1": {
+    "displayed_flow": "One more time, please. What's your answer?"
+  },
+  "answer_no_match_second_variant_2": {
+    "displayed_flow": "Would you answer again, please?"
+  },
+  "answer_no_match_second_variant_3": {
+    "displayed_flow": "Hmm, not an answer I was looking for. Try again, please."
+  },
+  "answer_max_no_match_variant_1": {
+    "displayed_flow": "Maybe we should take a break. Come back any time to talk."
+  },
+  "answer_max_no_match_variant_2": {
+    "displayed_flow": "Let's try this again later."
+  },
+  "answer_max_no_match_variant_3": {
+    "displayed_flow": "Let's take a break. Please try again later."
+  },
+  "answer_no_input_first_variant_1": {
+    "displayed_flow": "Go ahead and answer."
+  },
+  "answer_no_input_first_variant_2": {
+    "displayed_flow": "If you're ready, give me an answer."
+  },
+  "answer_no_input_first_variant_3": {
+    "displayed_flow": "No rush, but I'm ready for your answer."
+  },
+  "answer_no_input_second_variant_1": {
+    "displayed_flow": "Anytime you want to answer, my friend."
+  },
+  "answer_no_input_second_variant_2": {
+    "displayed_flow": "Don't over think it. I'm sure your answer is great!"
+  },
+  "answer_no_input_second_variant_3": {
+    "displayed_flow": "Whatever pops into your head is fine."
+  },
+  "answer_max_no_input_variant_1": {
+    "displayed_flow": "Ok, maybe we can talk again later."
+  },
+  "answer_max_no_input_variant_2": {
+    "displayed_flow": "Seems like we're done. I'll be here when you want to try again."
+  },
+  "answer_max_no_input_variant_3": {
+    "displayed_flow": "I'll assume that you left. Let me know if you want to talk later."
+  },
+  "outcome_intro_variant_1": {
+    "displayed_flow": "Ok, we're done. Get ready for your result!"
+  },
+  "outcome_intro_variant_2": {
+    "displayed_flow": "Ok, that's it. Let's find out what you got."
+  },
+  "outcome_intro_variant_3": {
+    "displayed_flow": "I have your result. This is exciting."
+  },
+  "end_of_game_variant_1": {
+    "displayed_flow": "Thanks for playing! Do you want to take the quiz again?"
+  },
+  "end_of_game_variant_2": {
+    "displayed_flow": "Thanks for playing! Do you want to try again?"
+  },
+  "end_of_game_variant_3": {
+    "displayed_flow": "Thanks for playing! Want to give it another try?"
+  },
+  "end_of_game_play_again_yes": {
+    "displayed_flow": "Yes"
+  },
+  "end_of_game_play_again_no": {
+    "displayed_flow": "No"
+  },
+  "restart_no_response_variant_1": {
+    "displayed_flow": "Ok, just ask if you want to try again later."
+  },
+  "restart_no_response_variant_2": {
+    "displayed_flow": "Ok, try again later, if you like."
+  },
+  "restart_no_response_variant_3": {
+    "displayed_flow": "Ok, just ask for the quiz if you ever want to try again."
+  },
+  "start_repeat_variant_1": {
+    "displayed_flow": "Are you ready?"
+  },
+  "start_repeat_variant_2": {
+    "displayed_flow": "Ready to start?"
+  },
+  "start_repeat_variant_3": {
+    "displayed_flow": "Should we start again?"
+  },
+  "skip_variant_1": {
+    "displayed_flow": "Sorry. No skipping."
+  },
+  "skip_variant_2": {
+    "displayed_flow": "Apologies, you need to answer all questions."
+  },
+  "skip_variant_3": {
+    "displayed_flow": "Sorry, I need help on this one."
+  },
+  "start_help": {
+    "displayed_flow": "You can answer yes or no. Are you ready to begin?"
+  },
+  "question_repeat_variant_1": {
+    "displayed_flow": "Of course! Here it is again."
+  },
+  "question_repeat_variant_2": {
+    "displayed_flow": "Here it is again."
+  },
+  "question_repeat_variant_3": {
+    "displayed_flow": "Here's the question."
+  },
+  "answer_help": {
+    "displayed_flow": "Just answer the questions, and then I'll give you a result at the end."
+  },
+  "quit_confirmation_variant_1": {
+    "displayed_flow": "Are you sure you want to stop?"
+  },
+  "quit_confirmation_variant_2": {
+    "displayed_flow": "Do you want to quit?"
+  },
+  "quit_confirmation_variant_3": {
+    "displayed_flow": "Are you sure you want to exit?"
+  },
+  "continue_to_play_variant_1": {
+    "displayed_flow": "Ok. Let's keep going."
+  },
+  "continue_to_play_variant_2": {
+    "displayed_flow": "Alright. We'll keep going."
+  },
+  "continue_to_play_variant_3": {
+    "displayed_flow": "Ok. Let's keep going."
+  },
+  "acknowledge_quit_variant_1": {
+    "displayed_flow": "Ok. Thanks for playing."
+  },
+  "acknowledge_quit_variant_2": {
+    "displayed_flow": "Ok. Goodbye, and thanks for playing."
+  },
+  "acknowledge_quit_variant_3": {
+    "displayed_flow": "Alright. Thanks for playing."
+  },
+  "restart_confirmation_variant_1": {
+    "displayed_flow": "Do you want to start over?"
+  },
+  "restart_confirmation_variant_2": {
+    "displayed_flow": "Should we restart?"
+  },
+  "restart_confirmation_variant_3": {
+    "displayed_flow": "Do you want to start all over?"
+  },
+  "restart_yes_response_variant_1": {
+    "displayed_flow": "Ok. Let's start over."
+  },
+  "restart_yes_response_variant_2": {
+    "displayed_flow": "Ok. We'll start over."
+  },
+  "restart_yes_response_variant_3": {
+    "displayed_flow": "Ok, lets do it again."
+  },
+  "generic_no_match_variant_1": {
+    "displayed_flow": "Well, that was unexpected. Can you try again?"
+  },
+  "generic_no_match_variant_2": {
+    "displayed_flow": "I had a little trouble understanding you. Could you try again?"
+  },
+  "generic_no_match_variant_3": {
+    "displayed_flow": "I did not understand, can you repeat that?"
+  },
+  "generic_max_no_match_variant_1": {
+    "displayed_flow": "Maybe try again later."
+  },
+  "generic_max_no_match_variant_2": {
+    "displayed_flow": "Lets do this later."
+  },
+  "generic_max_no_match_variant_3": {
+    "displayed_flow": "Lets continue this later."
+  },
+  "generic_no_input_variant_1": {
+    "displayed_flow": "Go ahead and answer when you're ready."
+  },
+  "generic_no_input_variant_2": {
+    "displayed_flow": "I'm ready for your answer."
+  },
+  "generic_no_input_variant_3": {
+    "displayed_flow": "I am waiting, let me know your answer."
+  },
+  "generic_max_no_input_variant_1": {
+    "displayed_flow": "Ok, maybe we can try again later."
+  },
+  "generic_max_no_input_variant_2": {
+    "displayed_flow": "Seems like you are busy, lets try this later."
+  },
+  "generic_max_no_input_variant_3": {
+    "displayed_flow": "Let me know if you want to pick this up later, Good bye."
+  },
+  "question_or": {
+    "displayed_flow": "Or"
+  },
+  "generic_yes": {
+    "displayed_flow": "Yes"
+  },
+  "generic_no": {
+    "displayed_flow": "No"
+  },
+  "generic_no_match_nonanswer_variant_1": {
+    "displayed_flow": "Okay. But say you had to choose one."
+  },
+  "generic_no_match_nonanswer_variant_2": {
+    "displayed_flow": "Please pick one of the provided answers"
+  },
+  "generic_no_match_nonanswer_variant_3": {
+    "displayed_flow": "Okay, but please look at the options and pick one."
+  }
+}

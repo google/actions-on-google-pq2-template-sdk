@@ -1,0 +1,26 @@
+{
+  "play_intro_confirmation": {
+    "value": "Yes"
+  },
+  "number_of_questions_per_quiz": {
+    "value": "3"
+  },
+  "intro_title": {},
+  "intro_subtitle": {},
+  "intro_title_text_color": {},
+  "intro_subtitle_text_color": {},
+  "start_button_text": {
+    "value": "Start"
+  },
+  "restart_button_text": {
+    "value": "Play Again"
+  },
+  "text_color": {},
+  "font": {},
+  "button_text_color": {},
+  "button_background_color": {},
+  "selected_button_text_color": {},
+  "selected_button_background_color": {},
+  "progress_bar_background_color": {},
+  "progress_bar_fill_color": {}
+}

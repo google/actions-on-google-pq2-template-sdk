@@ -1,0 +1,185 @@
+{
+  "actions": {
+    "custom": {
+      "actions.intent.MAIN": {},
+      "actions.intent.PLAY_GAME": {}
+    }
+  },
+  "intents": {
+    "BothOrNone": {
+      "trainingPhrases": [
+        "어려워",
+        "둘 다 틀렸어",
+        "두 개 다",
+        "둘 다 맞는 것 같아",
+        "잘 모르겠어",
+        "어려운데",
+        "둘 다 정답인 거 같아",
+        "모르겠어",
+        "둘 다",
+        "몰라",
+        "둘 다 정답이 아니야",
+        "모르겠는데"
+      ]
+    },
+    "Help": {
+      "trainingPhrases": [
+        "게임 방법이 뭐야?",
+        "어떻게 해야 해?",
+        "어떻게 해?",
+        "이 게임 어떻게 하는 거야?",
+        "도움이 필요해",
+        "도와줘"
+      ]
+    },
+    "No": {
+      "trainingPhrases": [
+        "아니요",
+        "됐어",
+        "충분해",
+        "안 할래",
+        "안 해",
+        "이제 그만",
+        "아니"
+      ]
+    },
+    "OrdinalChoice": {
+      "trainingPhrases": [
+        "($count '첫 번째' auto=false)인 것 같아",
+        "($count '1번' auto=false)은 어때",
+        "($count '첫 번째' auto=false)야",
+        "($count '두 번째' auto=false)인 것 같아",
+        "($count '1번' auto=false)이야",
+        "($count '2번' auto=false)이야",
+        "($count '첫 번째' auto=false)는 어때",
+        "($count '2번' auto=false)은 어때",
+        "($count '두 번째' auto=false)야",
+        "($count '첫 번째' auto=false) 꺼",
+        "($count '두 번째' auto=false) 꺼",
+        "($count '2번' auto=false)인 것 같아",
+        "($count '1번' auto=false)인 것 같아",
+        "($count '두 번째' auto=false)는 어때"
+      ]
+    },
+    "Quit": {
+      "trainingPhrases": [
+        "끝내",
+        "그만할래",
+        "게임 멈춰",
+        "이제 안 할래",
+        "종료해",
+        "게임 그만",
+        "끝내 줘",
+        "취소",
+        "취소해",
+        "종료"
+      ]
+    },
+    "Repeat": {
+      "trainingPhrases": [
+        "다시 말해줘요",
+        "질문 다시",
+        "질문 다시 말하기",
+        "질문 반복해줘",
+        "반복",
+        "다시",
+        "질문이 뭐였죠?",
+        "질문 반복",
+        "질문을 다시 말해주세요",
+        "다시 말해줘",
+        "못 들었는데",
+        "못 들었어",
+        "한 번 더 얘기해 줄래?",
+        "다시 말해 줄래?",
+        "다시 말해 줘",
+        "다시 얘기해 줘",
+        "뭐라고 했는지 못 들었어"
+      ]
+    },
+    "Restart": {
+      "trainingPhrases": [
+        "다시 플레이하기",
+        "게임 다시 해",
+        "초기화",
+        "다시 시작할래",
+        "게임 다시 시작해"
+      ]
+    },
+    "Skip": {
+      "trainingPhrases": [
+        "넘어갈래",
+        "이 질문 넘겨",
+        "패스해",
+        "넘어가",
+        "다음 질문",
+        "다음 거"
+      ]
+    },
+    "Start": {
+      "trainingPhrases": [
+        "시작하기",
+        "응, 게임하자",
+        "지금 바로 해",
+        "시작해",
+        "바로 해",
+        "바로 시작해 줘"
+      ]
+    },
+    "Yes": {
+      "trainingPhrases": [
+        "물론이지",
+        "그래",
+        "그럼",
+        "좋아",
+        "OK",
+        "예",
+        "응",
+        "물론",
+        "당연하지"
+      ]
+    }
+  },
+  "types": {
+    "answer": {
+      "synonym": {}
+    },
+    "count": {
+      "synonym": {
+        "entities": {
+          "first": {
+            "synonyms": [
+              "1번째",
+              "첫째",
+              "첫 번째",
+              "1번",
+              "1"
+            ]
+          },
+          "second": {
+            "synonyms": [
+              "두 번째로",
+              "둘째",
+              "2번",
+              "두 번째",
+              "2"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "localizedSettings": {
+      "developerEmail": "developer@gmail.com",
+      "developerName": "Developer Name",
+      "displayName": "성격 퀴즈 샘플",
+      "fullDescription": "성격 퀴즈 샘플",
+      "pronunciation": "성격 퀴즈 샘플",
+      "sampleInvocations": [
+        "성격 퀴즈 샘플한테 말하기"
+      ],
+      "shortDescription": "성격 퀴즈 샘플",
+      "voice": "female_1"
+    }
+  }
+}

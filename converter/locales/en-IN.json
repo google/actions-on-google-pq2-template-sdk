@@ -1,0 +1,290 @@
+{
+  "actions": {
+    "custom": {
+      "actions.intent.MAIN": {},
+      "actions.intent.PLAY_GAME": {}
+    }
+  },
+  "intents": {
+    "BothOrNone": {
+      "trainingPhrases": [
+        "I have no idea",
+        "this is difficult",
+        "this is hard",
+        "seems like both are answers",
+        "is it both",
+        "no clue",
+        "I have no clue",
+        "this is hard I dont know",
+        "no idea",
+        "I do not know the answer",
+        "neither of them",
+        "I don't know",
+        "neither",
+        "none",
+        "any one",
+        "Both",
+        "either"
+      ]
+    },
+    "Help": {
+      "trainingPhrases": [
+        "help",
+        "what should I do?",
+        "what to do?",
+        "how does this game work?",
+        "I don't understand",
+        "how should I answer the question?",
+        "I need some help",
+        "what can i do?",
+        "what to say?",
+        "give me some help",
+        "what do i do?",
+        "help me",
+        "how do I play?",
+        "how do I answer the question?",
+        "what is this game?",
+        "what can i say?",
+        "what do I say?",
+        "please help me",
+        "can you help me?",
+        "I don't know how to play this game",
+        "hint",
+        "how do i play this game?"
+      ]
+    },
+    "No": {
+      "trainingPhrases": [
+        "dont",
+        "not now",
+        "stay away",
+        "turn off",
+        "switch off",
+        "off",
+        "do not",
+        "negative",
+        "don't start",
+        "not at all",
+        "no way",
+        "of course not",
+        "not",
+        "never",
+        "I have better things to do",
+        "I am good",
+        "not this time",
+        "I don't think so",
+        "goodbye",
+        "absolutely not",
+        "not exactly",
+        "Next time",
+        "forget it",
+        "not likely",
+        "Let's not do that",
+        "I don't think",
+        "negatory",
+        "Nah",
+        "No",
+        "Nope",
+        "I'm good"
+      ]
+    },
+    "OrdinalChoice": {
+      "trainingPhrases": [
+        "could it be the ($count 'second' auto=false)?",
+        "it's the ($count '2nd' auto=false)",
+        "it's the ($count 'first one' auto=false)",
+        "is it the ($count 'first' auto=false)?",
+        "($count 'second' auto=false)",
+        "what about the ($count 'second' auto=false)?",
+        "($count '2nd' auto=false)",
+        "it must be the ($count 'second one' auto=false)",
+        "is it the ($count 'second' auto=false)?",
+        "it's the ($count 'first' auto=false)",
+        "I believe it is ($count 'first' auto=false)",
+        "the ($count 'first one' auto=false)",
+        "the answer is the ($count 'first' auto=false)",
+        "it is the ($count 'former' auto=false)",
+        "its the ($count 'latter' auto=false)",
+        "the ($count 'second one' auto=false)",
+        "is it the ($count '1st' auto=false)?",
+        "($count 'first' auto=false) option",
+        "($count 'first one' auto=false)"
+      ]
+    },
+    "Quit": {
+      "trainingPhrases": [
+        "stop quiz",
+        "stop playing",
+        "stop game",
+        "i don't want to play anymore",
+        "I'm done",
+        "end game",
+        "kill",
+        "close",
+        "good bye",
+        "turn off",
+        "let's stop here",
+        "game over",
+        "stop",
+        "go away",
+        "terminate",
+        "Let's talk later",
+        "quit",
+        "shut up",
+        "finish",
+        "hang up the phone",
+        "bye",
+        "stop this game",
+        "I quit",
+        "cancel",
+        "exit",
+        "end"
+      ]
+    },
+    "Repeat": {
+      "trainingPhrases": [
+        "I didn't hear that",
+        "say it again",
+        "question?",
+        "pardon",
+        "again",
+        "what was that?",
+        "repeat",
+        "come again",
+        "again?",
+        "could you repeat that?",
+        "repeat that",
+        "what did you say?",
+        "can you repeat",
+        "I didn't catch that",
+        "what is the question?",
+        "say again?",
+        "repeat the question",
+        "what?",
+        "say that again",
+        "could you repeat that?",
+        "go back",
+        "what was the question?",
+        "can you repeat"
+      ]
+    },
+    "Restart": {
+      "trainingPhrases": [
+        "play again",
+        "reset",
+        "play the game again",
+        "play again please",
+        "play the quiz again",
+        "lets do it again",
+        "start new game",
+        "play once more",
+        "start again",
+        "start over",
+        "restart",
+        "restart game"
+      ]
+    },
+    "Skip": {
+      "trainingPhrases": [
+        "pass",
+        "pass this question",
+        "pass this one",
+        "skip this",
+        "pass this",
+        "next one",
+        "next question",
+        "skip"
+      ]
+    },
+    "Start": {
+      "trainingPhrases": [
+        "Run",
+        "Go",
+        "Begin",
+        "Play",
+        "Start",
+        "Let's go",
+        "lets do it",
+        "lets play",
+        "lets start",
+        "start the thing",
+        "start it"
+      ]
+    },
+    "Yes": {
+      "trainingPhrases": [
+        "correct",
+        "sounds good",
+        "affirmative",
+        "Of course",
+        "okie",
+        "okies",
+        "okie dokie",
+        "yup",
+        "positive",
+        "yeah",
+        "Yes",
+        "definitely",
+        "for sure",
+        "probably",
+        "Okay",
+        "you bet",
+        "i guess so",
+        "OK",
+        "totally",
+        "Why not",
+        "sure",
+        "certainly",
+        "yep",
+        "alright",
+        "absolutely",
+        "surely"
+      ]
+    }
+  },
+  "types": {
+    "answer": {
+      "synonym": {}
+    },
+    "count": {
+      "synonym": {
+        "entities": {
+          "first": {
+            "synonyms": [
+              "first",
+              "1st",
+              "firstly",
+              "former",
+              "one",
+              "first one"
+            ]
+          },
+          "second": {
+            "synonyms": [
+              "second",
+              "2nd",
+              "latter",
+              "secondly",
+              "two",
+              "second one"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "localizedSettings": {
+      "developerEmail": "developer@gmail.com",
+      "developerName": "Developer Name",
+      "displayName": "Personality Quiz Sample India",
+      "fullDescription": "Personality Quiz Sample India",
+      "pronunciation": "Personality Quiz Sample India",
+      "sampleInvocations": [
+        "Talk to Personality Quiz Sample India"
+      ],
+      "shortDescription": "Personality Quiz Sample India",
+      "voice": "female_1"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "reporter": [
+    "lcov",
+    "text",
+    "json-summary"
+  ],
+  "exclude": [
+    "coverage",
+    "script",
+    "doc",
+    "types",
+    "**/__tests__"
+  ],
+  "all": true
+}

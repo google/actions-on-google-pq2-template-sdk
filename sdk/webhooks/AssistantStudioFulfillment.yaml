@@ -1,0 +1,56 @@
+# Copyright 2020 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#    http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+handlers:
+  - name: LOAD_SETTINGS
+  - name: SETUP_QUIZ
+  - name: START_YES
+  - name: START_SKIP_CONFIRMATION
+  - name: RESTART_YES
+  - name: START_NO
+  - name: RESTART_CONFIRMATION
+  - name: START_CONFIRMATION
+  - name: RESTART_NO
+  - name: QUIT_YES
+  - name: QUIT_NO
+  - name: QUIT_CONFIRMATION
+  - name: START_HELP
+  - name: START_REPEAT
+  - name: RESTART_REPEAT
+  - name: QUESTION_REPEAT
+  - name: QUIT_REPEAT
+  - name: GENERIC_NO_MATCH
+  - name: GENERIC_MAX_NO_MATCH
+  - name: GENERIC_NO_INPUT
+  - name: GENERIC_MAX_NO_INPUT
+  - name: START_NO_MATCH_1
+  - name: START_NO_MATCH_2
+  - name: START_NO_INPUT_1
+  - name: START_NO_INPUT_2
+  - name: ANSWER_NO_MATCH_1
+  - name: ANSWER_NO_MATCH_2
+  - name: ANSWER_MAX_NO_MATCH
+  - name: ANSWER_NO_INPUT_1
+  - name: ANSWER_NO_INPUT_2
+  - name: ANSWER_MAX_NO_INPUT
+  - name: ANSWER_HELP
+  - name: ANSWER_SKIP
+  - name: ANSWER
+  - name: ANSWER_ORDINAL
+  - name: ANSWER_BOTH_OR_NONE
+  - name: PLAY_AGAIN_NO
+  - name: PLAY_AGAIN_YES
+  - name: PLAY_AGAIN_REPEAT
+httpsEndpoint:
+  baseUrl: <WEBHOOK_URL>
+  endpointApiVersion: 2

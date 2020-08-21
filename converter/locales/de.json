@@ -1,0 +1,242 @@
+{
+  "actions": {
+    "custom": {
+      "actions.intent.MAIN": {},
+      "actions.intent.PLAY_GAME": {}
+    }
+  },
+  "intents": {
+    "BothOrNone": {
+      "trainingPhrases": [
+        "Keine Ahnung",
+        "das ist kniffelig",
+        "offenbar sind beides Antworten",
+        "beides sind offenbar Antworten",
+        "nicht einfach",
+        "beides sind scheinbar Antworten",
+        "keine von beiden",
+        "Ich weiß es nicht",
+        "das ist schwierig",
+        "beide",
+        "Ich habe keine Ahnung",
+        "keine",
+        "schwierig",
+        "das ist nicht einfach",
+        "Ich weiß nicht",
+        "scheinbar sind beides Antworten",
+        "anscheinend sind beides Antworten",
+        "keine davon",
+        "alle beide",
+        "beides sind anscheinend Antworten"
+      ]
+    },
+    "Help": {
+      "trainingPhrases": [
+        "wie spielt man das Spiel?",
+        "was mache ich jetzt?",
+        "wie funktioniert das Spiel?",
+        "was soll ich tun?",
+        "was sollte ich tun?",
+        "wie funktioniert dieses Spiel?",
+        "helfen",
+        "was sollte ich jetzt tun?",
+        "wie spielt man dieses Spiel?",
+        "Hilf mir",
+        "Hilfe",
+        "was soll ich jetzt tun?"
+      ]
+    },
+    "No": {
+      "trainingPhrases": [
+        "ciao",
+        "sicherlich nicht",
+        "auf keinen Fall",
+        "nein danke",
+        "keinesfalls",
+        "nicht",
+        "tschüss",
+        "nein",
+        "negativ",
+        "ich möchte nicht spielen",
+        "ich bin bereit",
+        "sicher nicht",
+        "ich möchte nicht"
+      ]
+    },
+    "OrdinalChoice": {
+      "trainingPhrases": [
+        "könnte es die ($count 'zweite' auto=false) sein",
+        "was ist mit der ($count 'zweiten' auto=false)",
+        "wie ist es ist mit der ($count 'ersten' auto=false)",
+        "was ist mit der ($count 'ersten' auto=false)",
+        "Die ($count 'erste' auto=false) ist es",
+        "wie ist es ist mit der ($count 'ersten' auto=false)?",
+        "Es ist die ($count 'erste' auto=false)",
+        "Die ($count 'zweite' auto=false)",
+        "kann es die ($count 'zweite' auto=false) sein?",
+        "könnte es die ($count 'erste' auto=false) sein?",
+        "wie ist es ist mit der ($count 'zweiten' auto=false)?",
+        "vielleicht ist es die ($count 'zweite' auto=false)?",
+        "könnte es die ($count 'zweite' auto=false) sein?",
+        "vielleicht ist es die ($count 'erste' auto=false)?",
+        "kann es die ($count 'erste' auto=false) sein?",
+        "was ist mit der ($count 'ersten' auto=false)?",
+        "könnte es die ($count 'erste' auto=false) sein",
+        "Die ($count 'zweite' auto=false) ist es",
+        "wie ist es ist mit der ($count 'zweiten' auto=false)",
+        "Die ($count 'erste' auto=false)",
+        "Es ist die ($count 'zweite' auto=false)",
+        "kann es die ($count 'erste' auto=false) sein",
+        "was ist mit der ($count 'zweiten' auto=false)?",
+        "vielleicht ist es die ($count 'erste' auto=false)",
+        "vielleicht ist es die ($count 'zweite' auto=false)",
+        "kann es die ($count 'zweite' auto=false) sein"
+      ]
+    },
+    "Quit": {
+      "trainingPhrases": [
+        "zu spielen aufhören",
+        "ich mit dem Spielen aufhören",
+        "schließen",
+        "mit Spielen aufhören",
+        "abbrechen",
+        "mit dem Spielen aufhören",
+        "ich möchte aufhören zu spielen",
+        "ich möchte nicht mehr spielen",
+        "beenden",
+        "aufhören"
+      ]
+    },
+    "Repeat": {
+      "trainingPhrases": [
+        "Ich habe es nicht gehört",
+        "sag es noch einmal",
+        "könntest du das bitte wiederholen?",
+        "Ich habe das nicht verstanden",
+        "noch einmal, bitte",
+        "bitte wiederhole das",
+        "Ich habe es nicht verstanden",
+        "kannst du das bitte wiederholen?",
+        "Wie bitte?",
+        "sag es noch mal",
+        "Ich habe es nicht gehört",
+        "sag es noch einmal",
+        "könntest du das bitte wiederholen?",
+        "Ich habe das nicht verstanden",
+        "könntest du das wiederholen?"
+      ]
+    },
+    "Restart": {
+      "trainingPhrases": [
+        "Erneut spielen",
+        "noch einmal spielen",
+        "noch mal spielen",
+        "Spiel neu initiieren",
+        "neu initiieren",
+        "Spiel neu starten",
+        "das Spiel noch einmal spielen",
+        "zurücksetzen",
+        "das Spiel noch mal spielen",
+        "neu starten",
+        "das Spiel wiederholen"
+      ]
+    },
+    "Skip": {
+      "trainingPhrases": [
+        "diese Frage übergehen",
+        "diese überspringen",
+        "diese ignorieren",
+        "diese Frage auslassen",
+        "diese Frage überspringen",
+        "nächste Frage",
+        "diese Frage ignorieren",
+        "diese auslassen",
+        "diese übergehen"
+      ]
+    },
+    "Start": {
+      "trainingPhrases": [
+        "Start",
+        "auf jeden Fall",
+        "ok, spielen wir",
+        "ok, jetzt ein Spiel",
+        "Ich kann nicht länger warten",
+        "ok, jetzt wird gespielt",
+        "Ich kann es nicht erwarten",
+        "los geht's"
+      ]
+    },
+    "Yes": {
+      "trainingPhrases": [
+        "klar",
+        "sicher",
+        "weswegen nicht",
+        "warum nicht",
+        "weshalb nicht",
+        "okay",
+        "in Ordnung",
+        "Ja",
+        "auf jeden Fall",
+        "selbstverständlich",
+        "mit Sicherheit",
+        "vermutlich",
+        "ganz sicher",
+        "absolut",
+        "ok",
+        "natürlich",
+        "sicherlich",
+        "bestimmt",
+        "definitiv",
+        "ganz bestimmt",
+        "wahrscheinlich",
+        "voraussichtlich"
+      ]
+    }
+  },
+  "types": {
+    "answer": {
+      "synonym": {}
+    },
+    "count": {
+      "synonym": {
+        "entities": {
+          "first": {
+            "synonyms": [
+              "letzte",
+              "erste",
+              "letzter",
+              "letztes",
+              "erstes",
+              "vorherige",
+              "erster",
+              "ersten"
+            ]
+          },
+          "second": {
+            "synonyms": [
+              "zweites",
+              "zwei",
+              "zweite",
+              "zweiter",
+              "zweitens"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "localizedSettings": {
+      "developerEmail": "developer@gmail.com",
+      "developerName": "Developer Name",
+      "displayName": "Persönlichkeits-Quiz-Beispiel",
+      "fullDescription": "Beispiel für ein Persönlichkeits-Quiz",
+      "pronunciation": "Persönlichkeits-Quiz-Beispiel",
+      "sampleInvocations": [
+        "Mit Persönlichkeits-Quiz-Beispiel sprechen"
+      ],
+      "shortDescription": "Beispiel für ein Persönlichkeits-Quiz",
+      "voice": "female_1"
+    }
+  }
+}

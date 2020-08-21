@@ -1,0 +1,214 @@
+{
+  "actions": {
+    "custom": {
+      "actions.intent.MAIN": {},
+      "actions.intent.PLAY_GAME": {}
+    }
+  },
+  "intents": {
+    "BothOrNone": {
+      "trainingPhrases": [
+        "je n'en sais rien",
+        "pas la moindre idée",
+        "ce n'est pas facile",
+        "je ne sais pas",
+        "j'en sais rien",
+        "Aucune idée",
+        "pas facile",
+        "les deux",
+        "je sèche",
+        "c'est difficile",
+        "les deux je pense",
+        "aucun des deux",
+        "je sais pas",
+        "les deux à mon avis",
+        "aucune des deux",
+        "elle est difficile",
+        "je dirais les deux"
+      ]
+    },
+    "Help": {
+      "trainingPhrases": [
+        "au secours",
+        "je dois faire quoi ?",
+        "aide",
+        "c'est quoi la règle ?",
+        "comment est-ce qu'on joue ?",
+        "à l'aide",
+        "aide-moi",
+        "que dois-je faire",
+        "c'est quoi le but du jeu ?",
+        "comment on joue à ce jeu ?",
+        "qu'est-ce que je dois faire ?",
+        "c'est quoi la règle du jeu ?"
+      ]
+    },
+    "No": {
+      "trainingPhrases": [
+        "non merci",
+        "c'est bon",
+        "je ne veux pas",
+        "non",
+        "ça ira",
+        "je ne veux pas jouer",
+        "au revoir"
+      ]
+    },
+    "OrdinalChoice": {
+      "trainingPhrases": [
+        "c'est ($count 'la seconde' auto=true)",
+        "c'est ($count 'le deuxième ' auto=true)?",
+        "c'est ($count 'la première' auto=true)",
+        "c'est ($count 'le premier' auto=true)",
+        "est-ce que c'est ($count 'le deuxième' auto=true)",
+        "c'est ($count 'le second' auto=true) ?",
+        "je dirais ($count 'la première' auto=true)",
+        "est-ce que c'est ($count 'le second' auto=true)",
+        "($count 'la première' auto=true)",
+        "c'est ($count 'la seconde' auto=true) ?",
+        "c'est ($count 'la deuxième' auto=true)",
+        "c'est ($count 'le deuxième ' auto=true)?",
+        "c'est ($count 'la première' auto=true)",
+        "c'est ($count 'le premier' auto=true)",
+        "est-ce que c'est ($count 'le deuxième' auto=true)",
+        "c'est ($count 'le second' auto=true) ?",
+        "je dirais ($count 'la première' auto=true)",
+        "est-ce que c'est ($count 'le second' auto=true)",
+        "($count 'la première' auto=true)",
+        "c'est ($count 'la seconde' auto=true) ?",
+        "c'est ($count 'la deuxième' auto=true)",
+        "c'est ($count 'le deuxième ' auto=true)?",
+        "c'est ($count 'la première' auto=true)",
+        "c'est ($count 'le premier' auto=true)",
+        "est-ce que c'est ($count 'le deuxième' auto=true)",
+        "c'est ($count 'le second' auto=true) ?",
+        "je dirais ($count 'la première' auto=true)",
+        "est-ce que c'est ($count 'le second' auto=true)",
+        "($count 'la première' auto=true)",
+        "c'est ($count 'la seconde' auto=true) ?",
+        "($count 'la seconde' auto=true)",
+        "peut-être l($count 'e deuxième' auto=true)"
+      ]
+    },
+    "Quit": {
+      "trainingPhrases": [
+        "ferme le jeu",
+        "annule",
+        "arrête le jeu",
+        "stop",
+        "quitte le jeu",
+        "je ne veux plus jouer"
+      ]
+    },
+    "Repeat": {
+      "trainingPhrases": [
+        "répète",
+        "je n'ai pas entendu",
+        "quoi ?",
+        "qu'est-ce que tu as dit",
+        "hein ?",
+        "tu as dit quoi",
+        "tu peux répéter ?",
+        "je n'ai pas compris"
+      ]
+    },
+    "Restart": {
+      "trainingPhrases": [
+        "Jouer à nouveau",
+        "rejoue",
+        "on recommence le jeu",
+        "rejouer",
+        "on joue encore",
+        "on rejoue",
+        "relance",
+        "relance le jeu",
+        "recommencer",
+        "on recommence"
+      ]
+    },
+    "Skip": {
+      "trainingPhrases": [
+        "passe cette question",
+        "question suivante",
+        "passer",
+        "passe à la suivante"
+      ]
+    },
+    "Start": {
+      "trainingPhrases": [
+        "Commencer",
+        "on y va",
+        "c'est parti on joue",
+        "j'ai hâte",
+        "OK on joue",
+        "ça marche",
+        "allez"
+      ]
+    },
+    "Yes": {
+      "trainingPhrases": [
+        "pourquoi pas",
+        "ça marche",
+        "allons-y",
+        "c'est parti",
+        "entendu",
+        "ça roule",
+        "très bien",
+        "OK",
+        "Oui",
+        "probablement",
+        "bien sûr",
+        "absolument",
+        "bien entendu",
+        "sans aucun doute"
+      ]
+    }
+  },
+  "types": {
+    "answer": {
+      "synonym": {}
+    },
+    "count": {
+      "synonym": {
+        "entities": {
+          "first": {
+            "synonyms": [
+              "le premier",
+              "numéro un",
+              "la première",
+              "1ʳᵉ",
+              "premier",
+              "première",
+              "1ᵉʳ"
+            ]
+          },
+          "second": {
+            "synonyms": [
+              "le deuxième",
+              "le second",
+              "numéro deux",
+              "la seconde",
+              "deuxième",
+              "la deuxième",
+              "second"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "localizedSettings": {
+      "developerEmail": "developer@gmail.com",
+      "developerName": "Developer Name",
+      "displayName": "échantillon de quiz de personnalité",
+      "fullDescription": "échantillon de quiz de personnalité",
+      "pronunciation": "échantillon de quiz de personnalité",
+      "sampleInvocations": [
+        "Parler avec échantillon de quiz de personnalité"
+      ],
+      "shortDescription": "échantillon de quiz de personnalité",
+      "voice": "female_1"
+    }
+  }
+}

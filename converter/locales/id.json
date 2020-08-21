@@ -1,0 +1,224 @@
+{
+  "actions": {
+    "custom": {
+      "actions.intent.MAIN": {},
+      "actions.intent.PLAY_GAME": {}
+    }
+  },
+  "intents": {
+    "BothOrNone": {
+      "trainingPhrases": [
+        "saya tidak tahu",
+        "tidak mudah",
+        "tidak paham",
+        "dua-duanya",
+        "bukan keduanya",
+        "sulit dimengerti",
+        "tidak tahu",
+        "kedua jawaban sepertinya benar",
+        "sulit",
+        "ini sulit",
+        "tampaknya keduanya benar",
+        "keduanya",
+        "keduanya salah",
+        "sangat sulit",
+        "bukan keduanya",
+        "sulit dimengerti",
+        "tidak tahu",
+        "kedua jawaban sepertinya benar",
+        "sulit",
+        "ini sulit"
+      ]
+    },
+    "Help": {
+      "trainingPhrases": [
+        "tolong saya",
+        "Bantu saya",
+        "bantuan",
+        "bagaimana cara kerja game ini?",
+        "bagaimana game ini bekerja?",
+        "apa yang harus saya lakukan?",
+        "cara kerja game ini seperti apa?",
+        "saya harus bagaimana?",
+        "saya harus melakukan apa?"
+      ]
+    },
+    "No": {
+      "trainingPhrases": [
+        "da-da",
+        "tidak perlu",
+        "tidak, terima kasih",
+        "tidak sama sekali",
+        "tidak",
+        "lewati",
+        "saya tidak ingin",
+        "tidak mau",
+        "tidak ingin"
+      ]
+    },
+    "OrdinalChoice": {
+      "trainingPhrases": [
+        "($count 'yang kedua' auto=true)",
+        "sepertinya yang ($count 'pertama' auto=true)",
+        "yang ($count 'awal' auto=true)",
+        "mungkin yang ($count 'pertama' auto=true)",
+        "mungkin ($count 'yang kedua' auto=true)",
+        "yang ($count 'nomor dua' auto=true)",
+        "apa yang ($count 'pertama' auto=true)",
+        "yang ($count 'pertama' auto=true)",
+        "yang ($count 'nomor satu' auto=false)",
+        "tampaknya ($count 'yang kedua' auto=true)",
+        "yang ($count 'kesatu' auto=true)",
+        "sepertinya ($count 'yang kedua' auto=true)",
+        "tampaknya yang ($count 'pertama' auto=true)",
+        "apa ($count 'yang kedua' auto=true)"
+      ]
+    },
+    "Quit": {
+      "trainingPhrases": [
+        "saya berhenti bermain game",
+        "nonaktifkan",
+        "hentikan bermain game",
+        "hentikan",
+        "keluar",
+        "berhenti",
+        "berhenti bermain game",
+        "saya tidak akan meneruskan game",
+        "matikan",
+        "hentikan game",
+        "batal",
+        "batalkan",
+        "tutup",
+        "saya tidak ingin bermain lagi"
+      ]
+    },
+    "Repeat": {
+      "trainingPhrases": [
+        "ulang lagi pertanyaannya",
+        "ulang lagi",
+        "saya tidak paham",
+        "bisa diulang?",
+        "tolong agak keras",
+        "bisa ucapkan lagi",
+        "tidak paham",
+        "tolong ucapkan lagi",
+        "tolong ulangi",
+        "ulangi sekali lagi",
+        "tidak bisa didengar",
+        "tidak mengerti",
+        "saya tidak dengar",
+        "tidak kedengaran",
+        "saya tidak mengerti"
+      ]
+    },
+    "Restart": {
+      "trainingPhrases": [
+        "Main Lagi",
+        "mulai dari awal",
+        "mulai lagi dari awal",
+        "Ulangi dari awal",
+        "mulai ulang game",
+        "setel ulang",
+        "ulang dari awal",
+        "atur ulang",
+        "restart game",
+        "mulai lagi game",
+        "mainkan game lagi",
+        "mainkan lagi"
+      ]
+    },
+    "Skip": {
+      "trainingPhrases": [
+        "lewati pertanyaan ini",
+        "langsung lompati",
+        "lewati",
+        "pertanyaan berikutnya",
+        "lompati pertanyaan ini",
+        "pertanyaan selanjutnya",
+        "lompat ke pertanyaan lain",
+        "lompati"
+      ]
+    },
+    "Start": {
+      "trainingPhrases": [
+        "mulai",
+        "langsung mainkan",
+        "ayo mulai",
+        "ingin langsung main",
+        "oke, ayo main",
+        "buka",
+        "ayo cepat mulai",
+        "sudah tidak sabar",
+        "langsung mulai game"
+      ]
+    },
+    "Yes": {
+      "trainingPhrases": [
+        "OK",
+        "bisa",
+        "mengapa tidak",
+        "kenapa tidak",
+        "baiklah",
+        "oke",
+        "sepertinya begitu",
+        "saya rasa begitu",
+        "tentu",
+        "Ya",
+        "pasti",
+        "tentu saja",
+        "tampaknya seperti itu"
+      ]
+    }
+  },
+  "types": {
+    "answer": {
+      "synonym": {}
+    },
+    "count": {
+      "synonym": {
+        "entities": {
+          "first": {
+            "synonyms": [
+              "kesatu",
+              "sebelumnya",
+              "paling awal",
+              "ke-1",
+              "awal",
+              "pertama",
+              "terdahulu",
+              "no 1",
+              "nomor satu"
+            ]
+          },
+          "second": {
+            "synonyms": [
+              "no 2",
+              "pendukung",
+              "yang kedua",
+              "kedua",
+              "setelahnya",
+              "lain",
+              "ke-2",
+              "lainnya",
+              "nomor dua"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "localizedSettings": {
+      "developerEmail": "developer@gmail.com",
+      "developerName": "Developer Name",
+      "displayName": "sampel kuis kepribadian",
+      "fullDescription": "sampel kuis kepribadian",
+      "pronunciation": "sampel kuis kepribadian",
+      "sampleInvocations": [
+        "Bicara dengan sampel kuis kepribadian"
+      ],
+      "shortDescription": "sampel kuis kepribadian",
+      "voice": "female_1"
+    }
+  }
+}

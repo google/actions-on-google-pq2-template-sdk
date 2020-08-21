@@ -1,0 +1,184 @@
+{
+  "actions": {
+    "custom": {
+      "actions.intent.MAIN": {},
+      "actions.intent.PLAY_GAME": {}
+    }
+  },
+  "intents": {
+    "BothOrNone": {
+      "trainingPhrases": [
+        "知らない",
+        "どちらも違う気がする",
+        "どっちも不正解",
+        "全然わからない",
+        "選べない",
+        "どっちも正解",
+        "見当もつかない",
+        "まったくわからない",
+        "わからない",
+        "思いつかない",
+        "両方",
+        "どっちでもいい",
+        "両方とも合ってない",
+        "全然わからない",
+        "選べない",
+        "どっちも正解",
+        "見当もつかない",
+        "まったくわからない"
+      ]
+    },
+    "Help": {
+      "trainingPhrases": [
+        "ヘルプ",
+        "助けて",
+        "何をしたらいい？",
+        "このゲームのやり方は？",
+        "どうしたらいい？",
+        "このゲームはどうやってやるの？"
+      ]
+    },
+    "No": {
+      "trainingPhrases": [
+        "いいえ",
+        "結構です",
+        "やらない",
+        "バイバイ",
+        "やりたくない",
+        "いや、いい"
+      ]
+    },
+    "OrdinalChoice": {
+      "trainingPhrases": [
+        "($count '最初のほう' auto=true)",
+        "($count '後のほう' auto=true)",
+        "($count '後者' auto=true)",
+        "($count '前者' auto=true)",
+        "($count '1番' auto=false)かも",
+        "($count '1つ目' auto=false)かも",
+        "($count '2つ目' auto=false)かも",
+        "($count '2番' auto=true)",
+        "($count '1番' auto=true)",
+        "($count '2番目' auto=true)",
+        "($count '2番' auto=false)かも",
+        "($count '1番目' auto=false)かも",
+        "($count '1番目' auto=true)",
+        "($count '2つ目' auto=true)",
+        "($count '1つ目' auto=true)"
+      ]
+    },
+    "Quit": {
+      "trainingPhrases": [
+        "ゲームを終了する",
+        "やめる",
+        "ゲームをやめる",
+        "もうゲームしたくない",
+        "キャンセル",
+        "中断",
+        "ゲームを中止する",
+        "終了",
+        "ゲームはもういい",
+        "停止",
+        "ゲームを終了する",
+        "やめる"
+      ]
+    },
+    "Repeat": {
+      "trainingPhrases": [
+        "質問をリピートして",
+        "質問をもう一度",
+        "質問を繰り返して",
+        "もう一回言って",
+        "もう一度言ってくれる？",
+        "なんて言った？",
+        "聞こえなかった"
+      ]
+    },
+    "Restart": {
+      "trainingPhrases": [
+        "やり直す",
+        "初めからやり直して",
+        "もう一度プレイ",
+        "やり直し",
+        "ゲームを最初から",
+        "もう一回やる",
+        "ゲームをやり直す",
+        "リセット"
+      ]
+    },
+    "Skip": {
+      "trainingPhrases": [
+        "スキップ",
+        "次の質問",
+        "パス",
+        "次行って"
+      ]
+    },
+    "Start": {
+      "trainingPhrases": [
+        "スタート",
+        "やろう",
+        "待ちきれない",
+        "OK、やろう"
+      ]
+    },
+    "Yes": {
+      "trainingPhrases": [
+        "うん、やろう",
+        "はい",
+        "やる",
+        "そうだね",
+        "いいよ",
+        "OK",
+        "もちろん"
+      ]
+    }
+  },
+  "types": {
+    "answer": {
+      "synonym": {}
+    },
+    "count": {
+      "synonym": {
+        "entities": {
+          "first": {
+            "synonyms": [
+              "1",
+              "前者",
+              "最初のほう",
+              "1番",
+              "1番目",
+              "1つ目",
+              "1個目"
+            ]
+          },
+          "second": {
+            "synonyms": [
+              "2",
+              "後者",
+              "後のほう",
+              "2番",
+              "2番目",
+              "2つ目",
+              "2個目"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "localizedSettings": {
+      "developerEmail": "developer@gmail.com",
+      "developerName": "Developer Name",
+      "displayName": "個性クイズのサンプル",
+      "fullDescription": "個性クイズのサンプル",
+      "pronunciation": "個性クイズのサンプル",
+      "sampleInvocations": [
+        "個性クイズのサンプルにつないで"
+      ],
+      "shortDescription": "個性クイズのサンプル",
+      "voice": "female_1"
+    }
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "actions": {
+    "custom": {
+      "actions.intent.MAIN": {},
+      "actions.intent.PLAY_GAME": {}
+    }
+  },
+  "intents": {
+    "BothOrNone": {
+      "trainingPhrases": [
+        "No tengo idea",
+        "Las dos",
+        "Parece que ambas respuestas son correctas",
+        "Es complicado",
+        "No tengo ni la más mínima idea",
+        "No es fácil",
+        "Ambas",
+        "Qué complicado",
+        "No tengo ni idea",
+        "Ninguna de las dos",
+        "Ni idea",
+        "No tengo ni la más remota idea",
+        "Parece que las dos respuestas son correctas",
+        "Qué difícil",
+        "Es difícil"
+      ]
+    },
+    "Help": {
+      "trainingPhrases": [
+        "¿Qué debería hacer?",
+        "¿Cómo funciona el juego?",
+        "¿Cómo se juega?",
+        "¿Cómo funciona este juego?",
+        "Ayuda",
+        "Ayúdame",
+        "¿Qué debo hacer?",
+        "¿Qué hago?"
+      ]
+    },
+    "No": {
+      "trainingPhrases": [
+        "Estoy bien",
+        "No",
+        "No me apetece jugar",
+        "Hasta pronto",
+        "No quiero",
+        "Adiós",
+        "No quiero jugar",
+        "Negativo"
+      ]
+    },
+    "OrdinalChoice": {
+      "trainingPhrases": [
+        "($count 'lo segundo' auto=false)",
+        "($count 'lo primero' auto=false)",
+        "($count 'segunda opción' auto=false)",
+        "($count 'primera opción' auto=false)",
+        "($count '2.ª' auto=false)",
+        "($count '1.ª' auto=false)",
+        "($count 'la número dos' auto=true)",
+        "($count 'la número uno' auto=true)",
+        "¿Es ($count 'la segunda' auto=false)?",
+        "¿Podría ser ($count 'la segunda' auto=false)?",
+        "¿Podría ser ($count 'la primera' auto=false)?",
+        "Puede ser ($count 'la primera' auto=true)",
+        "Podría ser ($count 'la primera' auto=false)",
+        "¿Es ($count 'la primera' auto=false)?",
+        "Quizás ($count 'la segunda' auto=false)",
+        "($count 'dos' auto=false)",
+        "Puede ser ($count 'la segunda' auto=true)",
+        "Quizás ($count 'la primera' auto=false)",
+        "Podría ser ($count 'la segunda' auto=false)",
+        "Puede que ($count 'la primera' auto=true)",
+        "Es ($count 'la primera' auto=true)",
+        "¿Qué tal ($count 'la segunda' auto=false)?",
+        "($count 'La primera' auto=true)",
+        "¿Puede ser ($count 'la segunda' auto=false)?",
+        "¿Qué tal ($count 'la primera' auto=false)?",
+        "Puede que ($count 'la segunda' auto=true)",
+        "Es ($count 'la segunda' auto=true)",
+        "¿Puede ser ($count 'la primera' auto=false)?"
+      ]
+    },
+    "Quit": {
+      "trainingPhrases": [
+        "Dejar de jugar",
+        "No me apetece jugar más",
+        "Para el juego",
+        "No quiero jugar más",
+        "Parar",
+        "Salir",
+        "Cancelar",
+        "Detener",
+        "Cerrar"
+      ]
+    },
+    "Repeat": {
+      "trainingPhrases": [
+        "¿Puedes repetir?",
+        "Repetir",
+        "¿Me lo repites?",
+        "Por favor, repite",
+        "Repetir la pregunta",
+        "Repite la pregunta",
+        "Repite",
+        "Repítelo",
+        "¿Puedes repetirlo?",
+        "¿Podrías repetirlo?",
+        "No lo he oído",
+        "Repetir"
+      ]
+    },
+    "Restart": {
+      "trainingPhrases": [
+        "Reiniciar el juego",
+        "Reiniciar",
+        "Volver a jugar",
+        "Volver a empezar"
+      ]
+    },
+    "Skip": {
+      "trainingPhrases": [
+        "Saltar esta pregunta",
+        "Omitir esta",
+        "Omitir esta pregunta",
+        "Saltar esta",
+        "Siguiente pregunta"
+      ]
+    },
+    "Start": {
+      "trainingPhrases": [
+        "Comenzar",
+        "Empezar",
+        "Me muero de ganas",
+        "Vale, vamos a jugar",
+        "No puedo esperar",
+        "Vamos"
+      ]
+    },
+    "Yes": {
+      "trainingPhrases": [
+        "¿Por qué no?",
+        "OK",
+        "Sí",
+        "Sin duda",
+        "Venga",
+        "Por supuesto",
+        "Claro",
+        "Probablemente",
+        "Definitivamente",
+        "Evidentemente",
+        "Seguro"
+      ]
+    }
+  },
+  "types": {
+    "answer": {
+      "synonym": {}
+    },
+    "count": {
+      "synonym": {
+        "entities": {
+          "first": {
+            "synonyms": [
+              "la número uno",
+              "la uno",
+              "1.ª",
+              "la primera",
+              "primera opción",
+              "lo primero"
+            ]
+          },
+          "second": {
+            "synonyms": [
+              "dos",
+              "la número dos",
+              "2.ª",
+              "la segunda",
+              "la dos",
+              "segunda opción",
+              "lo segundo"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "localizedSettings": {
+      "developerEmail": "developer@gmail.com",
+      "developerName": "Developer Name",
+      "displayName": "muestra de prueba de personalidad",
+      "fullDescription": "muestra de prueba de personalidad",
+      "pronunciation": "muestra de prueba de personalidad",
+      "sampleInvocations": [
+        "Hablar con muestra de prueba de personalidad"
+      ],
+      "shortDescription": "muestra de prueba de personalidad",
+      "voice": "female_1"
+    }
+  }
+}

@@ -1,0 +1,348 @@
+[
+  {
+    "personality_trait": "Professional",
+    "displayed_question": "Aliens have contacted you. What would you rather do? Learn about their advanced technologies or hang out together at a gala event that's out of this world?",
+    "positive_response_answers": [
+      "Tech",
+      "Super advanced technology",
+      "technology",
+      "advanced technology",
+      "learn about their tech",
+      "learn their technology",
+      "advanced technologies",
+      "Learn about tech"
+    ],
+    "negative_response_answers": [
+      "Gala",
+      "Gala event",
+      "event",
+      "go to the gala",
+      "hang out",
+      "hang out at the gala",
+      "hang out together",
+      "party",
+      "hang out at the party",
+      "fancy party",
+      "Go to a gala"
+    ]
+  },
+  {
+    "personality_trait": "Professional",
+    "displayed_question": "Suppose we were struck by lightning. Would you rather wake up and find that you could suddenly play piano like a virtuoso, or that you could shoot electric shocks from your fingers?",
+    "positive_response_answers": [
+      "Piano",
+      "Virtuoso",
+      "be a virtuoso",
+      "piano virtuoso",
+      "play piano",
+      "musical genius",
+      "music",
+      "play music",
+      "playing music",
+      "I'd play music"
+    ],
+    "negative_response_answers": [
+      "Shocks",
+      "Electric shocks",
+      "give shocks",
+      "jolts",
+      "electricity",
+      "fingertips",
+      "fingertip shocks",
+      "electrify",
+      "tiny shocks"
+    ]
+  },
+  {
+    "personality_trait": "Professional",
+    "displayed_question": "Suppose that we lived in a log cabin in the middle of nowhere, with only a wood stove for warmth. How would you rather chop wood: all at once, or little by little, every day?",
+    "positive_response_answers": [
+      "All at once",
+      "a lot at once",
+      "a whole bunch at once",
+      "chop a lot",
+      "chop a lot at once",
+      "chop all at once",
+      "a bunch at once",
+      "a bunch of wood at once",
+      "one chopping",
+      "one big chop",
+      "a bunch of wood",
+      "a whole bunch of wood",
+      "a bunch of wood at once",
+      "a whole bunch of wood at once",
+      "get it over with",
+      "get it done",
+      "all of it one time",
+      "one time",
+      "do all at once",
+      "do all of it at once"
+    ],
+    "negative_response_answers": [
+      "Little by little",
+      "Chop every day",
+      "chop a little",
+      "chop a little wood",
+      "chop wood each day",
+      "chop a little bit",
+      "a little bit every day",
+      "chop a little bit of wood",
+      "chop a little bit every day",
+      "every day",
+      "chop frequently",
+      "do it little by little",
+      "do a little bit",
+      "chop wood every day",
+      "every morning",
+      "every night"
+    ]
+  },
+  {
+    "personality_trait": "Professional",
+    "displayed_question": "If we were sent back in time, would you try to blend in with the locals, or profit from your knowledge of the future?",
+    "positive_response_answers": [
+      "Blend in",
+      "Try to blend",
+      "look like local people",
+      "local people",
+      "try to look natural",
+      "try to look local",
+      "be a local"
+    ],
+    "negative_response_answers": [
+      "Profit",
+      "Make money",
+      "use my knowledge",
+      "use my future knowledge",
+      "future knowledge",
+      "try to profit",
+      "make a profit",
+      "get rich",
+      "make money",
+      "knowledge of the future",
+      "money",
+      "cash",
+      "get cash",
+      "get money",
+      "predictions",
+      "make predictions"
+    ]
+  },
+  {
+    "personality_trait": "Normal",
+    "displayed_question": "Suppose that we were on vacation and needed to get from one tropical island to another. Would you rather travel by tiny airplane or by surfboard?",
+    "positive_response_answers": [
+      "Plane",
+      "Tiny airplane",
+      "aiplane",
+      "tiny plane",
+      "the plane",
+      "the little plane",
+      "little plane",
+      "small plane",
+      "small airplane",
+      "fly",
+      "I'd fly",
+      "travel by plane",
+      "travel by airplane"
+    ],
+    "negative_response_answers": [
+      "Surfboard",
+      "Board",
+      "surf",
+      "surfing",
+      "travel by surfboard",
+      "I'd surf"
+    ]
+  },
+  {
+    "personality_trait": "Normal",
+    "displayed_question": "If we were planning a cross-country roadtrip together, would you rather  drive a limo with extra cushy seating, or ride a motorcycle with a sidecar?",
+    "positive_response_answers": [
+      "Limo",
+      "Cushy limo",
+      "cushy seating",
+      "be extra-cushy",
+      "cushy",
+      "drive",
+      "drive a limo"
+    ],
+    "negative_response_answers": [
+      "Motorcycle",
+      "Ride",
+      "ride the motorcycle",
+      "sidecar",
+      "motorcycle and sidecar"
+    ]
+  },
+  {
+    "personality_trait": "Normal",
+    "displayed_question": "If we had to go on a quest to defeat an evil magician, would you rather face him in combat on a giant chessboard or inside an old 8-bit video game?",
+    "positive_response_answers": [
+      "Chessboard",
+      "Giant chessboard",
+      "giant chess",
+      "big chessboard",
+      "chess",
+      "play chess",
+      "on a chessboard",
+      "the chess one",
+      "the chessboard one"
+    ],
+    "negative_response_answers": [
+      "Video game",
+      "8-bit",
+      "8-bit game",
+      "old video game",
+      "old 8-bit game",
+      "inside game",
+      "inside the game",
+      "inside the video game",
+      "inside the 8-bit video game",
+      "inside the 8-bit game",
+      "8 bit game",
+      "8 bit",
+      "8 bit video game",
+      "old 8 bit game",
+      "inside the 8 bit video game",
+      "eight bit",
+      "eight-bit",
+      "eight bit game",
+      "eight-bit game",
+      "old eight bit game",
+      "old eight-bit game",
+      "inside the eight bit video game",
+      "inside the eight-bit video game",
+      "inside the eight bit game",
+      "inside the eight-bit game"
+    ]
+  },
+  {
+    "personality_trait": "Normal",
+    "displayed_question": "If we were co-founding a community garden, would you rather be in charge of deciding which flowers to grow or how to punish people who steal the vegetables?",
+    "positive_response_answers": [
+      "Flowers",
+      "Pick the flowers",
+      "choose flowers"
+    ],
+    "negative_response_answers": [
+      "Justice",
+      "Punishment",
+      "decide punishments",
+      "punish the thiefs",
+      "punish vegetable thiefs",
+      "punish people who steal vegetables",
+      "vegetables",
+      "punish people",
+      "choose punishments",
+      "choose how to punish",
+      "pick the punishments"
+    ]
+  },
+  {
+    "personality_trait": "Traditional",
+    "displayed_question": "If we were visiting the world’s first paranormal petting zoo, would you want to play with the unicorn or give the psychic cat a ball of yarn in exchange for wishes?",
+    "positive_response_answers": [
+      "Unicorn",
+      "Playing",
+      "play with unicorn",
+      "playing with the unicorn",
+      "the unicorn"
+    ],
+    "negative_response_answers": [
+      "Psychic Cat",
+      "The cat",
+      "cat",
+      "ball of yarn",
+      "wishes",
+      "I'd get wishes",
+      "I pick wishes",
+      "cat wishes",
+      "psychic cat wishes",
+      "yarn for wishes",
+      "give the cat yarn",
+      "give me wishes",
+      "psychic wishes",
+      "yarn to the cat",
+      "yarn to the psychic cat",
+      "play with the cat",
+      "psychic kitty",
+      "kitty",
+      "the kitty",
+      "kitty cat",
+      "give yarn to the kitty",
+      "yarn to the kitty cat"
+    ]
+  },
+  {
+    "personality_trait": "Traditional",
+    "displayed_question": "What magical illusion would you most like to perform  if we were doing a stageshow together? Sawing a person in half  or levitation?",
+    "positive_response_answers": [
+      "Sawing",
+      "Cut you in half",
+      "cut them in half",
+      "cut a person",
+      "cut in half",
+      "saw in half",
+      "Saw someone in half"
+    ],
+    "negative_response_answers": [
+      "Levitation",
+      "Levitate",
+      "float",
+      "fly"
+    ]
+  },
+  {
+    "personality_trait": "Traditional",
+    "displayed_question": "Imagine we were trying to solve a murder mystery. Once we're ready to name the killer, how should we point them out? Throw water in their face, or with a laserpointer?",
+    "positive_response_answers": [
+      "Glass of water",
+      "Throw the water",
+      "throw water",
+      "throw the glass",
+      "throwing water",
+      "throwing a glass of water",
+      "water in the face",
+      "water",
+      "throwing",
+      "throw it",
+      "throw glass"
+    ],
+    "negative_response_answers": [
+      "Laser pointer",
+      "Use the laser",
+      "use laser pointer",
+      "use pointer",
+      "point the laser",
+      "blind them with the laser",
+      "shine the laser"
+    ]
+  },
+  {
+    "personality_trait": "Traditional",
+    "displayed_question": "If we were in the finals of a cake-baking competition, would you want us to try a weird new flavor, or stick to your nana’s famous recipe?",
+    "positive_response_answers": [
+      "Nana",
+      "Stick with nana",
+      "stick with it",
+      "grandma's recipe",
+      "family recipe",
+      "famous recipe",
+      "use the famous recipe",
+      "stick with famous recipe",
+      "nana's famous recipe",
+      "Nana’s recipe"
+    ],
+    "negative_response_answers": [
+      "New flavor",
+      "weird flavor",
+      "be weird",
+      "try the weird one",
+      "go weird",
+      "try the new one",
+      "weird",
+      "New"
+    ]
+  }
+]

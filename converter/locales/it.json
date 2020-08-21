@@ -1,0 +1,215 @@
+{
+  "actions": {
+    "custom": {
+      "actions.intent.MAIN": {},
+      "actions.intent.PLAY_GAME": {}
+    }
+  },
+  "intents": {
+    "BothOrNone": {
+      "trainingPhrases": [
+        "potrebbero essere entrambe le risposte",
+        "potrebbero essere giuste entrambe le risposte",
+        "potrebbero essere corrette entrambe le risposte",
+        "non saprei",
+        "è difficile",
+        "non so",
+        "non ho idea",
+        "potrebbero essere esatte tutte e due le risposte",
+        "tutte e due",
+        "potrebbero essere giuste tutte e due le risposte",
+        "non ho la minima idea",
+        "potrebbero essere corrette tutte e due le risposte",
+        "potrebbero essere tutte e due le risposte",
+        "non ne ho idea",
+        "non ho la più pallida idea",
+        "entrambe",
+        "è complicato"
+      ]
+    },
+    "Help": {
+      "trainingPhrases": [
+        "come faccio a giocare a questo gioco",
+        "come giocare?",
+        "aiuto per favore",
+        "aiuto",
+        "come si gioca?",
+        "cosa dovrei fare?",
+        "cosa devo fare?",
+        "come funziona questo gioco?",
+        "come si fa questo gioco?",
+        "cosa faccio ora?"
+      ]
+    },
+    "No": {
+      "trainingPhrases": [
+        "no ti ringrazio",
+        "No",
+        "ciao",
+        "arrivederci",
+        "di certo no",
+        "non voglio",
+        "a posto così",
+        "non mi va",
+        "negativo"
+      ]
+    },
+    "OrdinalChoice": {
+      "trainingPhrases": [
+        "può essere ($count 'la seconda' auto=false)",
+        "potrebbe essere ($count 'la prima' auto=true)",
+        "potrebbe essere ($count 'la seconda' auto=true)",
+        "forse ($count 'la prima' auto=true)",
+        "può essere ($count 'la prima' auto=false)",
+        "è ($count 'la prima' auto=false)",
+        "è ($count 'la seconda' auto=false)",
+        "magari ($count 'la prima' auto=true)",
+        "forse ($count 'la seconda' auto=true)",
+        "magari ($count 'la seconda' auto=true)"
+      ]
+    },
+    "Quit": {
+      "trainingPhrases": [
+        "aiuto",
+        "come si gioca?",
+        "cosa dovrei fare?",
+        "cosa devo fare?",
+        "come funziona questo gioco?",
+        "come si fa questo gioco?",
+        "cosa faccio ora?"
+      ]
+    },
+    "Repeat": {
+      "trainingPhrases": [
+        "non ho capito",
+        "ripeti",
+        "dillo ancora",
+        "puoi ripetere?",
+        "dillo di nuovo",
+        "non l'ho capito",
+        "non ho capito cosa hai detto",
+        "dillo nuovamente",
+        "non ho sentito quello che hai detto",
+        "non ho capito quello che hai detto",
+        "potresti ripeterlo?",
+        "ridillo",
+        "potresti ripetere?",
+        "non l'ho sentito",
+        "non ho sentito cosa hai detto",
+        "non ho sentito",
+        "ripeti per favore",
+        "ripetilo",
+        "puoi ripeterlo?"
+      ]
+    },
+    "Restart": {
+      "trainingPhrases": [
+        "Gioca ancora",
+        "facciamo ancora il gioco",
+        "ricomincia",
+        "gioca di nuovo",
+        "ricominciamo il gioco",
+        "rinizia",
+        "giochiamo di nuovo",
+        "riniziamo il gioco",
+        "rinizia il gioco",
+        "reimposta",
+        "ricomincia il gioco",
+        "giochiamo ancora",
+        "facciamo di nuovo il gioco",
+        "riavvia il gioco",
+        "gioca nuovamente"
+      ]
+    },
+    "Skip": {
+      "trainingPhrases": [
+        "altra domanda",
+        "salta questa domanda",
+        "salta questa",
+        "lascia perdere questa domanda",
+        "passa oltre questa domanda",
+        "ignora questa domanda",
+        "ignora questa",
+        "prossima domanda",
+        "supera questa domanda",
+        "domanda successiva",
+        "lascia perdere questa",
+        "vai oltre questa domanda"
+      ]
+    },
+    "Start": {
+      "trainingPhrases": [
+        "Avvia",
+        "Ok, giochiamo",
+        "perfetto, giochiamo",
+        "cominciamo",
+        "iniziamo",
+        "andiamo",
+        "non vedo l'ora",
+        "forza, giochiamo",
+        "vai"
+      ]
+    },
+    "Yes": {
+      "trainingPhrases": [
+        "perfetto",
+        "perché no",
+        "va bene",
+        "OK",
+        "d'accordo",
+        "Sì",
+        "ovvio",
+        "sicuramente",
+        "certo",
+        "certo che sì",
+        "davvero",
+        "senz'altro",
+        "di sicuro",
+        "probabilmente",
+        "assolutamente sì",
+        "certamente"
+      ]
+    }
+  },
+  "types": {
+    "answer": {
+      "synonym": {}
+    },
+    "count": {
+      "synonym": {
+        "entities": {
+          "first": {
+            "synonyms": [
+              "la uno",
+              "la numero uno",
+              "prima",
+              "la prima"
+            ]
+          },
+          "second": {
+            "synonyms": [
+              "seconda",
+              "la due",
+              "la seconda",
+              "la numero due"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "settings": {
+    "localizedSettings": {
+      "developerEmail": "developer@gmail.com",
+      "developerName": "Developer Name",
+      "displayName": "campione di quiz sulla personalità",
+      "fullDescription": "campione di quiz sulla personalità",
+      "pronunciation": "campione di quiz sulla personalità",
+      "sampleInvocations": [
+        "Parla con campione di quiz sulla personalità"
+      ],
+      "shortDescription": "campione di quiz sulla personalità",
+      "voice": "female_1"
+    }
+  }
+}
