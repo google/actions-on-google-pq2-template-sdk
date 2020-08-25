@@ -1,8 +1,8 @@
 {
-  "name": "personality-quiz-2-converter",
+  "name": "personality-quiz-2-sdk-converter",
   "version": "0.0.0",
   "private": true,
-  "description": "Personality Quiz 2 Data Processing Tool",
+  "description": "Personality Quiz 2.0 Actions Builder Converter",
   "license": "Apache Version 2.0",
   "author": "Google Inc.",
   "engines": {

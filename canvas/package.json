@@ -1,8 +1,8 @@
 {
-  "name": "personality-quiz-2-canvas",
+  "name": "personality-quiz-2-sdk-canvas",
   "version": "0.0.0",
   "private": true,
-  "description": "Personality Quiz 2 Interactive Canvas Web App",
+  "description": "Personality Quiz 2.0 Actions Builder Interactive Canvas Web App",
   "license": "Apache Version 2.0",
   "author": "Google Inc.",
   "scripts": {

@@ -17,6 +17,7 @@
 console.time('cold-start');
 
 const functions = require('firebase-functions');
+
 const app = require('./app.js');
 const {
   FUNCTION_NAME,
@@ -24,9 +25,8 @@ const {
   FUNCTION_MEMORY,
   FUNCTION_REGION,
   FUNCTION_TIMEOUT,
-} = require('./config');
+} = require('./config.js');
 
-// Set the DialogflowApp object to handle the HTTPS POST request.
 exports[`${FUNCTION_NAME}_${FUNCTION_VERSION}`] = functions
   .region(FUNCTION_REGION)
   .runWith({timeoutSeconds: FUNCTION_TIMEOUT, memory: FUNCTION_MEMORY})

@@ -13,7 +13,7 @@
 // limitations under the License.
 
 /**
- * @fileoverview Schema constants for Personality Quiz 2 data sheet.
+ * @fileoverview Schema constants for Personality Quiz 2.0 data sheet.
  */
 
 /**

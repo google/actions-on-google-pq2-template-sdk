@@ -21,7 +21,7 @@ const config = {
   // Webhook config
   FUNCTION_NAME: 'personalityQuiz',
   FUNCTION_VERSION: 'v1',
-  FUNCTION_MEMORY: '2GB',
+  FUNCTION_MEMORY: '1GB',
   FUNCTION_REGION: 'us-central1',
   FUNCTION_TIMEOUT: 60, // seconds
   IMMERSIVE_URL: `https://${process.env.GCLOUD_PROJECT}.web.app/`,

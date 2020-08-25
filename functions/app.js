@@ -122,7 +122,7 @@ const errorHandler = async (conv, error) => {
 };
 
 // Instantiates the ConversationV3 app.
-const app = conversation({debug: config.ENABLE_DEBUG});
+const app = conversation({debug: false});
 // App Middleware.
 app.middleware(middleware);
 // Map fulfillment handlers with actions

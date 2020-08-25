@@ -1,8 +1,10 @@
-# Personality Quiz 2 Template to Actions Builder Migration
+# Migration from the Personality Quiz 2.0 template to Actions Builder
 
-This project contains the source code for [Personality Quiz 2](https://developers.google.com/assistant/templates/personality-quiz2) template to [Actions Builder](https://developers.google.com/assistant/conversational/build) migration.
+This project contains the source code for the conversion from the [Personality Quiz 2.0](https://developers.google.com/assistant/templates/personality-quiz2) template to the [Actions Builder](https://developers.google.com/assistant/conversational/build) platform.
 
-## Directory Structure
+## Directory structure
+
+The following table describes the file structure for this project:
 
 | Directory | Description                            |
 | --------- | -------------------------------------- |
@@ -13,78 +15,103 @@ This project contains the source code for [Personality Quiz 2](https://developer
 
 ## Prerequisites
 
-1. Node.js and NPM
-   - We recommend installing using [nvm for Linux/Mac](https://github.com/creationix/nvm) and [nvm-windows for Windows](https://github.com/coreybutler/nvm-windows)
-   - Webhook runtime requires Node.js 10
+Before you begin the migration, perform the following steps:
 
-2. Install the [Firebase CLI](https://developers.google.com/assistant/actions/dialogflow/deploy-fulfillment)
-   - We recommend using MAJOR version `8` , `npm install -g firebase-tools@^8.0.0`
-   - Run `firebase login` with your Google account
+1. Install Node.js and NPM.
+   - We recommend that you install them with [Node Version Manager (nvm) for Linux and Mac](https://github.com/nvm-sh/nvm) or [nvm for Windows](https://github.com/coreybutler/nvm-windows).
+   - The webhook runtime requires Node.js version 10 or later.
 
-3. Install the [Actions CLI](https://developers.google.com/assistant/actionssdk/gactions)
-   - Extract the package to a location of your choice and add the binary to your environment's PATH variable. Alternatively, extract the package to a location that's already in your PATH variable (for example, /usr/local/bin)
+2. Install the [Firebase CLI](https://developers.google.com/assistant/conversational/df-asdk/deploy-fulfillment)
+   - We recommend that you install it with MAJOR version 8. To do so, run the following command `npm install -g firebase-tools@^8.0.0`.
+   - Run `firebase login` with your Google account.
+
+3. Install the [Actions CLI](https://developers.google.com/assistant/actionssdk/gactions).
+   - Extract the package to a location of your choice and add the binary to your environment's PATH variable. Alternatively, extract the package to a location that's already in your PATH variable, such as `/usr/local/bin`.
+   - Run `gactions login` with your Google account.
+
+4. Go to [Google Sheet Node.js Quickstart](https://developers.google.com/sheets/api/quickstart/nodejs).
+   - Select `Enable the Google Sheets API` from Step 1.
+   - Pick a project name or use the default *Quickstart* name. Note that this project is not the same new Actions on Google project needed for migration.
+   - Select `NEXT`.
+   - Select `Desktop app` under Configure your Oauth client.
+   - Select `CREATE`.
+   - Select `DOWNLOAD CLIENT CONFIGURATION` to download `credentials.json` and save the json file in the `converter/` directory.
 
 ## Setup
 
-### Create a New Project in Actions Console
+### Create a new project in Actions Console
 
-1. From the [Actions on Google Console](https://console.actions.google.com/), **New project** > **Create project** > under **What kind of Action do you want to build?** > **Game** > **Blank project for smart display**
-   - To find your Project ID: In the Actions Console console for your project, navigate to ⋮ > Project settings > Project ID
+1. From the [Actions on Google Console](https://console.actions.google.com/), select **New project&nbsp;> Create project** and then select **What kind of Action do you want to build?&nbsp;> Game&nbsp;> Blank project for smart display**.
+   - To find your Project ID, go to the Actions Console for your project and navigate to **More ⋮&nbsp;> Project settings&nbsp;> Project ID**.
+   - Be careful not to mix the Project ID with the Project Name.
 
-### Sheets and Locale Conversion Tool
+### Upgrade Firebase pricing plan
 
-1. Navigate to `converter/` directory by running `cd converter` from the root directory of this project
-2. Go to [Google Sheet Quickstart](https://developers.google.com/sheets/api/quickstart/nodejs), generate a `credentials.json` from step 1 and save it in `converter/` directory
-3. Run `npm install`
-4. Open `converter/index.js` and update LOCALE_TO_SHEET_ID mapping with your own Personality Quiz 2 data sheet ID for the specific locale you want to convert
-   - Uncomment the specific locales you wish to convert
-   - The sheet IDs provided in `converter/index.js` are the default sample sheets for each locale. To create a brand new personality quiz 2 action, make a copy of the sample sheet and update your own data
-   - Sheet ID can be located in the sheet URL: `https://docs.google.com/spreadsheets/d/<SHEET_ID>/edit#gid=0`
-   - Verify the data sheet is shared with viewer access by clicking on the **Share** button in Google Sheet console and change the Get Link access to *Anyone on the internet with this link can view*
-5. Run `npm run convert -- --project_id <PROJECT_ID>`
-   - On the initial run, the script will ask you grant read access to your sheets by visiting a URL and copy the authorization code back
-   - Sheet data should be added to `functions/data/` directory and locale specific data should be added to `sdk/` directory
+1. From the [Firebase Console](https://console.firebase.google.com/), select the same newly created project from Actions Console and upgrade its pricing plan to **Blaze (pay as you go)**.
+   - A Blaze plan is required for Cloud Functions with Node.js version 10 runtime.
 
-### Firebase Hosting Deployment for Interactive Canvas
+### Update Personality Quiz 2.0 sheet ID
 
-1. Navigate to `canvas/` directory by running `cd canvas` from the root directory of this project
-2. Run `npm install`
-3. Run `npm run build`
-4. Run `firebase deploy --project <PROJECT_ID> --only hosting` to deploy the canvas web app to Firebase Hosting
-   - After releasing a version of the action, to update your canvas web app and test your changes without affecting your production action, we recommend deploying to a [different site](https://support.google.com/firebase/answer/9095420?hl=en) within your Firebase Hosting (e.g. v2-<PROJECT_ID>.web.app)
-   - Be aware that you also need to adjust the **IMMERSIVE_URL** in `functions/config.js` for a new webhook to point to the updated canvas web app hosting URL
+1. Open `converter/config.js` and update the `LOCALE_TO_SHEET_ID` mapping with your own Personality Quiz 2.0 data sheet ID for the specific locale you want to convert.
+   - Sheet ID can be located in the sheet URL: `https://docs.google.com/spreadsheets/d/<SHEET_ID>/edit#gid=0`.
+   - Uncomment the specific locales you want to convert.
+   - The sheet IDs provided in `converter/config.js` are the default sample sheets for each locale. To create a brand new Personality Quiz 2.0 action, make a copy of the sample sheet and update it with your own data.
 
-### Firebase Functions Deployment for Webhook
+## Migration script
 
-1. Navigate to `functions/` directory by running `cd functions` from the root directory of this project
-2. Run `npm install`
-3. Run `firebase deploy --project <PROJECT_ID> --only functions:personalityQuiz_v1` to deploy v1 webhook.
-   - After releasing a version of the action, to update you webhook and test your changes without affecting your production action, we recommend deploying to a new webhook URL (e.g. personalityQuiz_v2) by update the **FUNCTION_VERSION** in `functions/config.js`
+1. Run `./build.sh <PROJECT_ID>` from the root directory of this project to automatically run all the migration steps.
+   - Alternatively, you can follow the [migration steps](#migration-steps) to manually perform the migration.
 
-### Actions CLI
+## Migration steps
 
-1. Navigate to `sdk/` directory by running `cd sdk` from the root directory of this project
-2. Run `gactions login` to login to your account
-3. Run `gactions push` to push your project
-   - If you need to sync the changes made in Actions Builder console with your local `sdk/` directory, run `gactions pull`
-4. Run `gactions deploy preview` to deploy your project to preview environment
+### Run sheet and locale conversion script
 
-### Running this Sample
+1. Navigate to the `converter/` directory by running `cd converter` from the root directory of this project.
+2. Run `npm install`.
+3. Run `npm run convert -- --project_id <PROJECT_ID>`.
+   - On the initial run, the script asks you to grant read access to your sheets. To do so, you must visit the provided URL and copy the authorization code back after you accept read access.
+   - After the conversion script finishes, the parsed sheet data is added to `functions/data/` directory and locale specific data is added to `sdk/` directory.
 
-- You can test your Action on any Google Assistant-enabled device on which the Assistant is signed into the same account used to create this project.
-- You can also use the Actions on Google Console simulator to test most features and preview on-device behavior.
+### Deploy Interactive Canvas web app to Firebase Hosting
 
-## References & Issues
+1. Navigate to the `canvas/` directory by running `cd canvas` from the root directory of this project.
+2. Run `npm install && npm run build`.
+3. To deploy the Interactive Canvas web app to Firebase Hosting, run `firebase deploy --project <PROJECT_ID> --only hosting`.
+   - After you release a version of the action, you can update your canvas web app and test your changes without affecting your production action. To do so, we recommend that you deploy to a [different site](https://support.google.com/firebase/answer/9095420) within your Firebase Hosting, such as `v2-<PROJECT_ID>.web.app`.
+   - To point a new webhook to the updated canvas web app hosting URL, be sure to adjust the `IMMERSIVE_URL` in `functions/config.js`.
+
+### Deploy webhook to Cloud Functions for Firebase
+
+1. Navigate to the `functions/` directory by running `cd functions` from the root directory of this project.
+2. Run `npm install`.
+3. To deploy the v1 webhook, run `firebase deploy --project <PROJECT_ID> --only functions:personalityQuiz_v1`.
+   - After you release a version of the action, you can update your webhook and test your changes without affecting your production action. To do so, we recommend that you update the `FUNCTION_VERSION` in `functions/config.js` to deploy a new webhook URL, such as `personalityQuiz_v2`.
+
+### Use Actions CLI to push and preview your project
+
+1. Navigate to the `sdk/` directory by running `cd sdk` from the root directory of this project.
+2. To login to your account, run `gactions login`.
+3. To push your project, run `gactions push`.
+   - The validation warnings can be fixed by updating the missing Directory information in the Deploy section of the Actions Console.
+   - (Optional) If you need to sync the changes made in the Actions Builder Console with your local `sdk/` directory, you can run `gactions pull`.
+4. To deploy your project to preview environment, run `gactions deploy preview`.
+
+## Test the converted action
+
+- You can test your Action on any Google Assistant-enabled device that's signed into the same account used to create this project.
+- You can also use the Actions on Google Console [simulator](https://developers.google.com/assistant/console/simulator) to test most features and preview on-device behavior.
+
+## References and issues
 
 - Questions? Go to [StackOverflow](https://stackoverflow.com/questions/tagged/actions-on-google) or the [Assistant Developer Community on Reddit](https://www.reddit.com/r/GoogleAssistantDev/).
-- For bugs, please report an issue on Github.
-- Actions on Google [Documentation](https://developers.google.com/assistant)
-- Actions on Google [Codelabs](https://codelabs.developers.google.com/?cat=Assistant)
+- If you find any bugs, report them through Github.
+- To learn more about Actions on Google, read our [documentation](https://developers.google.com/assistant).
+- To get guided, hands-on practice with Actions on Google, try some of our [Codelabs](https://codelabs.developers.google.com/?cat=Assistant).
 
-## Contributing
+## Contribute
 
-Please read and follow the steps in the [CONTRIBUTING.md](CONTRIBUTING.md).
+To contribute to this project, follow the steps on the [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## License
 
-See [LICENSE](LICENSE).
+For more information on license, read the [LICENSE](LICENSE).
