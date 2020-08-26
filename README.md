@@ -13,7 +13,7 @@ The following table describes the file structure for this project:
 | functions | Fulfillment webhook source code        |
 | sdk       | Action SDK resource files              |
 
-## Prerequisites
+## Step 1 - Prerequisites
 
 Before you begin the migration, perform the following steps:
 
@@ -21,7 +21,7 @@ Before you begin the migration, perform the following steps:
    - We recommend that you install them with [Node Version Manager (nvm) for Linux and Mac](https://github.com/nvm-sh/nvm) or [nvm for Windows](https://github.com/coreybutler/nvm-windows).
    - The webhook runtime requires Node.js version 10 or later.
 
-2. Install the [Firebase CLI](https://developers.google.com/assistant/conversational/df-asdk/deploy-fulfillment)
+2. Install the [Firebase CLI](https://developers.google.com/assistant/conversational/df-asdk/deploy-fulfillment).
    - We recommend that you install it with MAJOR version 8. To do so, run the following command `npm install -g firebase-tools@^8.0.0`.
    - Run `firebase login` with your Google account.
 
@@ -37,7 +37,7 @@ Before you begin the migration, perform the following steps:
    - Select `CREATE`.
    - Select `DOWNLOAD CLIENT CONFIGURATION` to download `credentials.json` and save the json file in the `converter/` directory.
 
-## Setup
+## Step 2 - Setup
 
 ### Create a new project in Actions Console
 
@@ -50,6 +50,8 @@ Before you begin the migration, perform the following steps:
 1. From the [Firebase Console](https://console.firebase.google.com/), select the same newly created project from Actions Console and upgrade its pricing plan to **Blaze (pay as you go)**.
    - A Blaze plan is required for Cloud Functions with Node.js version 10 runtime.
 
+## Step 3 - Migration
+
 ### Update Personality Quiz 2.0 sheet ID
 
 1. Open `converter/config.js` and update the `LOCALE_TO_SHEET_ID` mapping with your own Personality Quiz 2.0 data sheet ID for the specific locale you want to convert.
@@ -57,14 +59,14 @@ Before you begin the migration, perform the following steps:
    - Uncomment the specific locales you want to convert.
    - The sheet IDs provided in `converter/config.js` are the default sample sheets for each locale. To create a brand new Personality Quiz 2.0 action, make a copy of the sample sheet and update it with your own data.
 
-## Migration script
+### (Option 1) Migration script
 
-1. Run `./build.sh <PROJECT_ID>` from the root directory of this project to automatically run all the migration steps.
-   - Alternatively, you can follow the [migration steps](#migration-steps) to manually perform the migration.
+1. To automatically run all the migration steps, run `./build.sh <PROJECT_ID>` from the root directory of this project.
+   - Alternatively, you can follow the [manual migration steps](#(option-2)-manual-migration-steps) to perform the migration.
 
-## Migration steps
+### (Option 2) Manual migration steps
 
-### Run sheet and locale conversion script
+#### Run sheet and locale conversion script
 
 1. Navigate to the `converter/` directory by running `cd converter` from the root directory of this project.
 2. Run `npm install`.
@@ -72,7 +74,7 @@ Before you begin the migration, perform the following steps:
    - On the initial run, the script asks you to grant read access to your sheets. To do so, you must visit the provided URL and copy the authorization code back after you accept read access.
    - After the conversion script finishes, the parsed sheet data is added to `functions/data/` directory and locale specific data is added to `sdk/` directory.
 
-### Deploy Interactive Canvas web app to Firebase Hosting
+#### Deploy Interactive Canvas web app to Firebase Hosting
 
 1. Navigate to the `canvas/` directory by running `cd canvas` from the root directory of this project.
 2. Run `npm install && npm run build`.
@@ -80,23 +82,23 @@ Before you begin the migration, perform the following steps:
    - After you release a version of the action, you can update your canvas web app and test your changes without affecting your production action. To do so, we recommend that you deploy to a [different site](https://support.google.com/firebase/answer/9095420) within your Firebase Hosting, such as `v2-<PROJECT_ID>.web.app`.
    - To point a new webhook to the updated canvas web app hosting URL, be sure to adjust the `IMMERSIVE_URL` in `functions/config.js`.
 
-### Deploy webhook to Cloud Functions for Firebase
+#### Deploy webhook to Cloud Functions for Firebase
 
 1. Navigate to the `functions/` directory by running `cd functions` from the root directory of this project.
 2. Run `npm install`.
 3. To deploy the v1 webhook, run `firebase deploy --project <PROJECT_ID> --only functions:personalityQuiz_v1`.
    - After you release a version of the action, you can update your webhook and test your changes without affecting your production action. To do so, we recommend that you update the `FUNCTION_VERSION` in `functions/config.js` to deploy a new webhook URL, such as `personalityQuiz_v2`.
 
-### Use Actions CLI to push and preview your project
+#### Use Actions CLI to push and preview your project
 
 1. Navigate to the `sdk/` directory by running `cd sdk` from the root directory of this project.
-2. To login to your account, run `gactions login`.
+2. To login to your Google account, run `gactions login`.
 3. To push your project, run `gactions push`.
    - The validation warnings can be fixed by updating the missing Directory information in the Deploy section of the Actions Console.
    - (Optional) If you need to sync the changes made in the Actions Builder Console with your local `sdk/` directory, you can run `gactions pull`.
 4. To deploy your project to preview environment, run `gactions deploy preview`.
 
-## Test the converted action
+## Step 4 - Test the converted action
 
 - You can test your Action on any Google Assistant-enabled device that's signed into the same account used to create this project.
 - You can also use the Actions on Google Console [simulator](https://developers.google.com/assistant/console/simulator) to test most features and preview on-device behavior.
