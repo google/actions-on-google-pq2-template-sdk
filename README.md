@@ -52,6 +52,31 @@ Before you begin the migration, perform the following steps:
 
 ## Step 3 - Migration
 
+### Sample sheets for creating a new action
+
+1. To create a brand new Personality Quiz 2.0 action, make a copy of the Personality Quiz 2.0 sample sheet in your preferred locale and update it with your own data. Alternatively, you can use your existing Personality Quiz 2.0 data sheet.
+   - [de](https://docs.google.com/spreadsheets/d/1kxPXNuoZcIS3_Ap6q_NKKPTyV35dpMLtfvbPEj1J2zw/copy)
+   - [en](https://docs.google.com/spreadsheets/d/1OLseseqfTJInOpLN-4z4xx285HakZ4S0uEVgrFBe0IY/copy)
+   - [en-AU](https://docs.google.com/spreadsheets/d/1De_s0weSrkh0C-NfgSk2wxaL6jiILRf6p6U-7jgUeLQ/copy)
+   - [en-CA](https://docs.google.com/spreadsheets/d/1De_s0weSrkh0C-NfgSk2wxaL6jiILRf6p6U-7jgUeLQ/copy)
+   - [en-GB](https://docs.google.com/spreadsheets/d/1De_s0weSrkh0C-NfgSk2wxaL6jiILRf6p6U-7jgUeLQ/copy)
+   - [en-IN](https://docs.google.com/spreadsheets/d/1De_s0weSrkh0C-NfgSk2wxaL6jiILRf6p6U-7jgUeLQ/copy)
+   - [en-US](https://docs.google.com/spreadsheets/d/1OLseseqfTJInOpLN-4z4xx285HakZ4S0uEVgrFBe0IY/copy)
+   - [es](https://docs.google.com/spreadsheets/d/1NLO-CZFH1g4S-b5j2MPufYAYswGoFG2MgH4f-YhByG8/copy)
+   - [es-419](https://docs.google.com/spreadsheets/d/1Q8pkqzw2KyFPf6p2-3wWKgP9rYbZg0tW-SaBGDORYfE/copy)
+   - [es-ES](https://docs.google.com/spreadsheets/d/1NLO-CZFH1g4S-b5j2MPufYAYswGoFG2MgH4f-YhByG8/copy)
+   - [fr](https://docs.google.com/spreadsheets/d/1Yp433xvfWZlRwRIO1Jj7ce63U_sMrE4V9uQWGbZGdUk/copy)
+   - [fr-CA](https://docs.google.com/spreadsheets/d/1MZ8hJcVx6yhuvDjF2cufSe-FWhmCnxh1tZBNp1Qh1fc/copy)
+   - [fr-FR](https://docs.google.com/spreadsheets/d/1Yp433xvfWZlRwRIO1Jj7ce63U_sMrE4V9uQWGbZGdUk/copy)
+   - [hi](https://docs.google.com/spreadsheets/d/1ksd-tMbaZ85lWXafFoFllm1xKCXCh0Lb_drO9h1LGUk/copy)
+   - [id](https://docs.google.com/spreadsheets/d/162SDjJ0kNNxrDpa6fcAIaSv0Ryy8VNdljLj0hYNr_9Y/copy)
+   - [it](https://docs.google.com/spreadsheets/d/1DSwhbs7-XhP2PtV-0pCEf6qi_39j0bng6GV9ZLkvJz0/copy)
+   - [ja](https://docs.google.com/spreadsheets/d/14gkqRuZALSxY3r74yu_ESnRWBDSPc9reRdIAslQYkKw/copy)
+   - [ko](https://docs.google.com/spreadsheets/d/1uqAe1wiroziZbXr69ufVuAA5og9kUjC_5YwY43ymxM0/copy)
+   - [pt-BR](https://docs.google.com/spreadsheets/d/1QHPU9EuKeLIDnGioDYZcikyWabldUQdKkPtaL5OkLjw/copy)
+   - [ru](https://docs.google.com/spreadsheets/d/11w5Wg42IybyDFQtamTjTuuALPYvEsbYrHwvkbFKvumI/copy)
+   - [th](https://docs.google.com/spreadsheets/d/1wxKELXLVlnAxfXqymNlIQIvPnPO7KsdyYZUkdo4mUJg/copy)
+
 ### Update Personality Quiz 2.0 sheet ID
 
 1. Open `converter/config.js` and update the `LOCALE_TO_SHEET_ID` mapping with your own Personality Quiz 2.0 data sheet ID for the specific locale you want to convert.
@@ -62,7 +87,7 @@ Before you begin the migration, perform the following steps:
 ### (Option 1) Migration script
 
 1. To automatically run all the migration steps, run `./build.sh <PROJECT_ID>` from the root directory of this project.
-   - Alternatively, you can follow the [manual migration steps](#(option-2)-manual-migration-steps) to perform the migration.
+   - Alternatively, you can follow the [manual migration steps](#option-2_manual-migration-steps) to perform the migration.
 
 ### (Option 2) Manual migration steps
 
