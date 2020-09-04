@@ -91,9 +91,11 @@ class Option extends Component {
       this.ripple,
       0.64,
       {
+        webkitClipPath: `circle(20px at ${x}% ${y}%)`,
         clipPath: `circle(20px at ${x}% ${y}%)`,
       },
       {
+        webkitClipPath: `circle(${radius}px at ${x}% ${y}%)`,
         clipPath: `circle(${radius}px at ${x}% ${y}%)`,
         ease: Easing.decelerate,
       }
