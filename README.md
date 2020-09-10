@@ -86,6 +86,7 @@ Open `converter/config.js` and update the `LOCALE_TO_SHEET_ID` mapping with your
 - The Sheet ID can be located in the sheet URL: `https://docs.google.com/spreadsheets/d/`**`<SHEET_ID>`**`/edit#gid=0`.
 - Uncomment the specific locales you want to convert.
 - The sheet IDs provided in `converter/config.js` are the default sample sheets for each locale. To create a brand new Personality Quiz 2.0 action, make a copy of the sample sheet and update it with your own data.
+- Make sure the data sheet is owned by the same Google account that is performing the migration.
 
 After you've updated the sheet ID, you have two options for how to proceed with the migration.
 
@@ -93,6 +94,7 @@ After you've updated the sheet ID, you have two options for how to proceed with 
 
 To automatically run all the migration steps, run `./build.sh` **`<PROJECT_ID>`** from the root directory of this project.
 
+- On the initial run, the script asks you to grant read access to your sheets. To do so, you must visit the provided URL and copy the authorization code back after you accept read access. If you see a **This app isn't verified** warning page, click **Advanced** to show the drop down text. Then click **Go to Quickstart (unsafe)** to continue the authorization process.
 - Alternatively, you can follow the [manual migration steps](#option-2_manual-migration-steps) to perform the migration.
 
 ### (Option 2) Manual migration steps
@@ -104,7 +106,7 @@ To manually migrate your project, perform the steps given in the following four 
 1. Navigate to the `converter/` directory. To do so, run `cd converter` from the root directory of this project.
 2. Run `npm install`.
 3. Run `npm run convert -- --project_id <PROJECT_ID>`.
-   - On the initial run, the script asks you to grant read access to your sheets. To do so, you must visit the provided URL and copy the authorization code back after you accept read access.
+   - On the initial run, the script asks you to grant read access to your sheets. To do so, you must visit the provided URL and copy the authorization code back after you accept read access. If you see a **This app isn't verified** warning page, click **Advanced** to show the drop down text. Then click **Go to Quickstart (unsafe)** to continue the authorization process.
    - After the conversion script finishes, the parsed sheet data is added to the `functions/data/` directory, while locale-specific data is added to the `sdk/` directory.
 
 #### Deploy the Interactive Canvas web app to Firebase Hosting
@@ -112,7 +114,7 @@ To manually migrate your project, perform the steps given in the following four 
 1. Navigate to the `canvas/` directory. To do so, run `cd canvas` from the root directory of this project.
 2. Run `npm install && npm run build`.
 3. To deploy the Interactive Canvas web app to Firebase Hosting, run `firebase deploy --project <PROJECT_ID> --only hosting`.
-   - After you release a version of the action, you can update your canvas web app and test your changes without affecting your production action. To do so, we recommend that you deploy to a [different site](https://support.google.com/firebase/answer/9095420) within your Firebase Hosting, such as `v2-`**`<PROJECT_ID>`**`.web.app`.
+   - After you release a version of the action, you can update your canvas web app and test your changes without affecting your production action. To do so, we recommend that you deploy to a [different site](https://support.google.com/firebase/answer/9095420) within your Firebase Hosting, such as `v2-<PROJECT_ID>.web.app`.
    - To point a new webhook to the updated canvas web app hosting URL, be sure to adjust the `IMMERSIVE_URL` in `functions/config.js`.
 
 #### Deploy the webhook to Cloud Functions for Firebase
