@@ -95,7 +95,7 @@ After you've updated the sheet ID, you have two options for how to proceed with 
 To automatically run all the migration steps, run `./build.sh` **`<PROJECT_ID>`** from the root directory of this project.
 
 - On the initial run, the script asks you to grant read access to your sheets. To do so, you must visit the provided URL and copy the authorization code back after you accept read access. If you see a **This app isn't verified** warning page, click **Advanced** to show the drop down text. Then click **Go to Quickstart (unsafe)** to continue the authorization process.
-- Alternatively, you can follow the [manual migration steps](#option-2_manual-migration-steps) to perform the migration.
+- Alternatively, you can follow the [manual migration steps](#option-2-manual-migration-steps) to perform the migration.
 
 ### (Option 2) Manual migration steps
 
